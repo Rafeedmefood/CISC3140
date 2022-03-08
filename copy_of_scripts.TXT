@@ -2314,3 +2314,1084 @@ fatal: Authentication failed for 'https://github.com/Rafeedmefood/CISC3140.git/'
 exit
 
 Script done on Tue 08 Mar 2022 12:02:52 AM EST
+Script started on Tue 08 Mar 2022 12:10:05 PM EST
+]0;Rafid.Karim94@sol26:~/CISC3140[?1034h[Rafid.Karim94@sol26 CISC3140]$ git [K[K[K[Kvim [K[K[K[Ksqlite3 base.db 
+SQLite version 3.7.17 2013-05-20 00:56:22
+Enter ".help" for instructions
+Enter SQL statements terminated with a ";"
+[?1034hsqlite> .[KSELECT * FROM c[KCar_Score
+   ...> ;
+128|128
+124|124
+15|120
+113|116
+83|112
+112|110
+65|106
+91|102
+50|102
+31|102
+216|96
+228|92
+175|92
+13|92
+126|92
+63|86
+127|86
+3|84
+161|84
+180|82
+57|80
+25|78
+106|78
+36|74
+39|72
+178|72
+103|72
+84|70
+33|68
+30|66
+123|66
+1051|66
+41|64
+218|64
+158|64
+48|62
+38|62
+23|62
+21|62
+12|62
+53|60
+35|60
+142|58
+110|58
+156|56
+115|56
+6|54
+43|54
+37|54
+137|54
+225|52
+134|52
+5|50
+51|50
+189|50
+170|50
+88|48
+52|48
+211|48
+104|48
+232|46
+Showcar|44
+9|44
+8|44
+140|44
+122|44
+121|44
+118|44
+85|42
+56|42
+49|42
+45|42
+153|42
+44|40
+222|40
+207|40
+19|40
+176|40
+99|38
+20|38
+18|38
+179|38
+145|38
+78|36
+200|36
+162|36
+17|34
+10|34
+46|32
+4341|32
+24|32
+92|30
+7|30
+181|30
+120|30
+11|30
+59|28
+238|28
+144|28
+116|28
+98|26
+242|26
+219|26
+187|26
+14|26
+141|26
+114|26
+81|24
+241|24
+22|24
+2|24
+130|24
+93|22
+172|22
+163|22
+150|22
+100|22
+235|20
+230|20
+182|20
+167|20
+79|18
+34|18
+226|18
+Vip|16
+89|16
+183|16
+67|14
+4|14
+220|14
+193|14
+186|14
+159|14
+108|14
+95|12
+76|12
+177|12
+96|10
+94|10
+68|10
+243|10
+237|10
+190|10
+16|10
+138|10
+111|10
+102|10
+86|8
+74|8
+69|8
+42|8
+28|8
+185|8
+184|8
+75|6
+71|6
+64|6
+40|6
+212|6
+1|6
+72|4
+66|4
+174|4
+197|2
+Car_ID|0
+70|0
+101|0
+0|0
+sqlite> SL[KELECT Car_ID]]]]][K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K.schem [Ka cars
+CREATE TABLE cars(CAR_ID int NOT NULL,Year int,Make varchar(255),Model varchar(255),Owner varchar(255),PRIMARY KEY (CAR_ID));
+sqlite> SEKEC=[K[K[K[KLECT * frmo [K[K[K[K[KFROM cars, Car_Score
+   ...> WHERE stu[K[K[Kcars.Car_ID = Car_Score_[K. Car_ID[1PCar_ID[C[C[C[C[C[C;
+48|2015|Acura|TLX|Hernando|48|62
+124|2015|Jeep|Wrangler|Noel|124|124
+222|2015|Lexus|Is250|Edan|222|40
+207|1993|Honda|Civic eG|Hieronymus|207|40
+167|2016|Ford|Mystang|Nickolas|167|20
+159|2013|Hyundai|Gen coupe|Martin|159|14
+20|2009|Infiniti|G37|Aldridge|20|38
+178|2009|Honda|Oddesy|Ambros|178|72
+30|2012|Hyundai|Celoster|Quincy|30|66
+1|2012|Subaru|WRX|Palmer|1|6
+51|2015|Subaru|WRX|Temple|51|50
+183|2005|Volkswagen|Jetta|Zachery|183|16
+177|2005|Volkswagen|Jetta gli|Rupert|177|12
+5|2003|Acura|Rsx|Sayers|5|50
+218|2010|Chevy|Camaro|Horst|218|64
+39|2011|Honda|Civic|Muffin|39|72
+68|2013|Nissan|Altima|Scot|68|10
+10|2001|Nissan|S15|Harcourt|10|34
+67|2015|Subaru|Sti|Wilbur|67|14
+43|2011|Toyota|4 Runner|Georgi|43|54
+170|2014|Chevy|Cruze|Osborn|170|50
+216|2007|Chrystler|300|Asher|216|96
+99|2014|Honda|Civic si|Clyde|99|38
+89|2014|Honda|Civic si|Nealon|89|16
+95|2004|Infiniti|G35|Norry|95|12
+228|2010|Nissan|370|Baillie|228|92
+7|2014|Nissan|Sentra|Alix|7|30
+14|1990|Nissan|Skyline|Hugibert|14|26
+8|1991|Nissan|Skyline|Sigfried|8|44
+145|1990|Volkswagen|Gti|Reade|145|38
+102|2015|Honda|Accord|Correy|102|10
+36|2016|Subaru|WRX|Ozzy|36|74
+189|2012|Toyota|Fj cruiser|Derry|189|50
+111|2007|Bmw|328i|Marlon|111|10
+140|1995|Mitsu|Evo8|Roger|140|44
+161|2012|Nissan|370z|Sheffy|161|84
+37|2015|Subaru|Sti|Feodor|37|54
+243|2008|Toyota|Matrix|Sollie|243|10
+184|2010|Volkswagen|Cc|Ernie|184|8
+66|2010|Volkswagen|Gti|Teador|66|4
+101|2014|Honda|Civic|Theodore|101|0
+21|2009|Subaru|WRX|Alvis|21|62
+200|2016|Subaru|WRX|Rand|200|36
+2|2016|Bmw|M2|Jordon|2|24
+23|1998|Subaru|Legacy|Tremayne|23|62
+59|2012|Volkswagen|Golf|Rolf|59|28
+42|2001|Dodge|Viper|Rowney|42|8
+83|2014|Honda|Accord|Palmer|83|112
+16|2008|Nissan|350z|Killy|16|10
+181|2003|Volkswagen|Gti|Arri|181|30
+0|2015|Chevy|Camaro|Jordan|0|0
+88|2008|Honda|Accord|Karney|88|48
+25|2012|Mercedes|C250|Yvor|25|78
+176|2014|Mitsu|Lancer|Germaine|176|40
+134|2013|Subaru|WRX|Cooper|134|52
+127|2013|Acura|Tsx|Donal|127|86
+104|2014|Honda|Civic si|Tanner|104|48
+120|2014|Ford|Focus st|Elwyn|120|30
+85|2017|Honda|Accord|Sholom|85|42
+Showcar|2014|Nissan|Gtr|Tally|Showcar|44
+108|2013|Audi|S4|Abdul|108|14
+98|2012|Mercedes|C63|Englebert|98|26
+130|2016|Honda|Civic si|Denys|130|24
+12|1990|Nissan|240|Klemens|12|62
+232|2018|Subaru|WRX|Marmaduke|232|46
+Vip|2008|Volkswagen|Gli|Salomon|Vip|16
+96|2017|Volkswagen|Gti|Wynn|96|10
+15|2014|Audi|S4|Blane|15|120
+65|2009|Honda|Fit|Trumaine|65|106
+92|2017|Hyundai|Elantra sport|Myles|92|30
+179|2004|Volkswagen|R32|Ashlin|179|38
+63|2010|Honda|Civic|Cris|63|86
+35|2016|Honda|Civic|Gerhardt|35|60
+79|1993|Mazda|Miata|Rustin|79|18
+4341|1992|Nissan|Rps13|Ronald|4341|32
+156|2014|Volkswagen|Gli|Jamison|156|56
+220|2004|Audi|A4|Vladimir|220|14
+44|2018|Honda|Civic si|Elisha|44|40
+19|2001|Mitsu|Evo7|Jae|19|40
+123|2006|Lexus|Sc430|Patrizius|123|66
+57|2015|Scion|Frs|Arman|57|80
+230|2004|Acura|Tsx|Cullen|230|20
+33|2015|Subaru|Sti|Gideon|33|68
+75|2012|Subaru|WRX|Redford|75|6
+175|2006|Honda|Civic|Taber|175|92
+115|2001|Honda|Crv|Udale|115|56
+153|2017|Subaru|Brz|Nick|153|42
+76|2005|Subaru|Sti|Roi|76|12
+56|2009|Volkswagen|Jetta|Haily|56|42
+50|2015|Acura|TLX|Homerus|50|102
+163|2013|Mitsu|Ralliart|Shepherd|163|22
+53|2013|Subaru|WRX|Pembroke|53|60
+241|2007|Toyota|Camry|Hastings|241|24
+114|2010|Volkswagen|Gti|Roderick|114|26
+41|2012|Acura|Tsx|Barbabas|41|64
+116|2008|Audi|A4|Obidiah|116|28
+137|2017|Ford|Focus rs|Tristam|137|54
+212|2001|Lexus|Is300|Dav|212|6
+52|2007|Mazda|Speed 3|Ber|52|48
+93|2005|Acura|TL|Cesaro|93|22
+226|2008|Honda|Accord|Koenraad|226|18
+22|2007|Honda|Civic|Lowe|22|24
+70|2014|Honda|Civic|Paul|70|0
+128|2010|Infiniti|G37|Martin|128|128
+40|2007|Subaru|Legacy|Aksel|40|6
+238|1982|Volkswagen|Rabbit|Renaud|238|28
+31|2007|Honda|Fit|Jereme|31|102
+71|2008|Acura|TL|Osborn|71|6
+18|2015|Audi|S3|Greg|18|38
+38|2017|Hyundai|Elantra sport|Mill|38|62
+46|2008|Volkswagen|R32|Early|46|32
+49|1997|Acura|Integra|Ted|49|42
+28|1995|Bmw|318xi|Iggie|28|8
+219|2016|Ford|Focus rs|Spenser|219|26
+185|2013|Volkswagen|Jett|Taddeusz|185|8
+162|2014|Nissan|370z|Baudoin|162|36
+180|2011|Volkswagen|Gti|Jeromy|180|82
+103|2010|Acura|Tsx|Beaufort|103|72
+197|2010|Audi|A4|Enrico|197|2
+74|2015|Honda|Accord|Bartholomeo|74|8
+150|2006|Nissan|350z|Bar|150|22
+78|2015|Mazda|6|Nollie|78|36
+141|1993|Mazda|Miata|Diego|141|26
+17|2016|Mercedes|C43|Gustavo|17|34
+187|2007|Subaru|Legacy|Griffith|187|26
+69|2018|Subaru|WRX|Amory|69|8
+100|2006|Volvo|S60r|Elwin|100|22
+112|2008|Acura|TL|Web|112|110
+172|2014|Bmw|4|Aurthur|172|22
+91|2010|Mitsu|Lancer|Coop|91|102
+158|2007|Nissan|350z|Wally|158|64
+182|2012|Volkswagen|Cc|Darcy|182|20
+225|2016|Acura|TLX|Abbey|225|52
+81|2016|Volkswagen|GTI|Ware|81|24
+6|2016|Volkswagen|Golf r|Hamil|6|54
+121|2012|Acura|TL|Hunt|121|44
+211|2004|Acura|Tsx|Ellswerth|211|48
+186|2012|Volkswagen|Gli|Uriah|186|14
+4|2007|Honda|Civic|Evan|4|14
+72|2016|Honda|Civic si|Ken|72|4
+45|2006|Acura|TL|Kylie|45|42
+1051|2006|Acura|Tsx|Eli|1051|66
+84|2012|Mercedes|Cl63amg|Orton|84|70
+118|1993|Honda|Civic|Ginger|118|44
+174|2006|Acura|Rsx|Teodor|174|4
+138|1990|Mazda|Miata|Andras|138|10
+242|2014|Nissan|Maxima|Tris|242|26
+3|2011|Nissan|370|Barbabas|3|84
+193|2014|Nissan|Ssntra|Napoleon|193|14
+94|2004|Volkswagen|Gti|Estevan|94|10
+11|1991|Nissan|Skyline|Korey|11|30
+86|1996|Volkswagen|Jetta|Hebert|86|8
+9|1996|Nissan|240|Pierson|9|44
+142|1993|Toyota|Supra|Giorgio|142|58
+126|2010|Volkswagen|Eos|Stern|126|92
+144|2016|Volkswagen|Gti|Davidde|144|28
+110|2011|Toyota|Camry|Ugo|110|58
+34|2010|Honda|Fit|Sutherland|34|18
+190|1995|Lexus|Sc300|Parker|190|10
+235|2013|Scion|Frs|Huntley|235|20
+24|2013|Subaru|BRZ|Sauveur|24|32
+64|2004|Subaru|Forester|Carver|64|6
+122|2011|Infiniti|M37s|Terrence|122|44
+106|2007|Acura|Tl type s|Ignazio|106|78
+113|2012|Acura|Tsx sportwagon|Marcel|113|116
+13|2016|Honda|Civic 1.5t|Robbert|13|92
+237|1987|Volkswagen|Jetta|Padraic|237|10
+sqlite> WHERE cars.Car_ID = Car_Score.Car_ID;[C[C[C[C[C[C[C[C[8PSELECT * FROM cars, Car_Score\Car_Score\Car_Score[1PCar_Score[1PCar_Score[1PCar_Score[1PCar_Score[1PCar_Score[1PCar_Score[1PCar_Score[1PCar_Score[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C, (Select [K[K[K[K[K[KELECT Year, m[KMkae[K[K[Kake, Model FROM cars)
+   ...> WSELECT * FROM Car_Score, (SELECT Year, Make, Model FROM cars)[C[C[C[C[C[C[C[C[24PWHERE cars.Car_ID = Car_Score.Car_ID;
+Error: no such column: cars.Car_ID
+sqlite> WHERE cars.Car_ID = Car_Score.Car_ID;[C[C[C[C[C[C[C[CSELECT * FROM Car_Score, (SELECT Year, Make, Model FROM cars)[C[C[C[C[C[C[C[C[24PWHERE cars.Car_ID = Car_Score.Car_ID;[C[C[C[C[C[C[C[C[K,[K.table
+Car_Score  cars       judges     scores     temp     
+sqlite> .sh[Kchema scores
+CREATE TABLE scores(rank, Car_ID, Year, Make, Model, Score);
+sqlite> SEKE[K[KLECT
+   ...> roq[K[Kroq[K[K[K[KROQ[KW_NUMBER [K () OVER (
+   ...> ORDER BY Score ) Rank,
+   ...> Car_ID, TY[K[KYear, Make, Model,Owner FROM Car_Score, cars;
+Error: near "(": syntax error
+sqlite> Car_ID, Year, Make, Model,Owner FROM Car_Score, cars;[C[C[C[C[C[C[C[C[31PORDER BY Score ) Rank,[C[C[C[C[C[C[C[CCar_ID, Year, Make, Model,Owner FROM Car_Score, cars;[C[C[C[C[C[C[C[C[31PORDER BY Score ) Rank,[C[C[C[C[C[C[C[C[2PROW_NUMBER () OVER ([C[C[C[C[C[C[C[CSELECT[K
+   ...> SELECTCar_ID, Year, Make, Model,Owner FROM Car_Score, cars;[C[C[C[C[C[C[C[C[31PORDER BY Score ) Rank,[C[C[C[C[C[C[C[C[2PROW_NUMBER () OVER ([C[C[C[C[C[C[C[CSELECT[KROW_NUMBER () OVER (
+   ...> ROW_NUMBER () OVER ([C[C[C[C[C[C[C[CSELECT[KCar_ID, Year, Make, Model,Owner FROM Car_Score, cars;[C[C[C[C[C[C[C[C[31PORDER BY Score ) Rank,
+   ...> ORDER BY Score ) Rank,[C[C[C[C[C[C[C[C[2PROW_NUMBER () OVER ([C[C[C[C[C[C[C[CSELECT[KROW_NUMBER () OVER ([C[C[C[C[C[C[C[CORDER BY Score ) Rank,[C[C[C[C[C[C[C[C[KORDER BY Score ) Rank,[C[C[C[C[C[C[C[C[KORDER BY Score ) Rank,[C[C[C[C[C[C[C[C[2PROW_NUMBER () OVER ([C[C[C[C[C[C[C[CSELECT[KCar_ID, Year, Make, Model,Owner FROM Car_Score, cars;[C[C[C[1P;[1P;[1P;[1P;[1P;[1P;[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@D[1@ 
+Error: near "(": syntax error
+sqlite> Car_ID FROM Car_Score;[C[C[C[C[C[C[C[CORDER BY Score ) Rank,[C[C[C[C[C[C[C[C[2PROW_NUMBER () OVER ([C[C[C[C[C[C[C[CSELECT[K
+   ...> SELECTCar_ID FROM Car_Score;[C[C[C[C[C[C[C[CORDER BY Score ) Rank,[C[C[C[C[C[C[C[C[2PROW_NUMBER () OVER (
+   ...> ROW_NUMBER () OVER ([C[C[C[C[C[C[C[CSELECT[KCar_ID FROM Car_Score;[C[C[C[C[C[C[C[CORDER BY Score ) Rank,
+   ...> ORDER BY Score ) Rank,[C[C[C[C[C[C[C[C[2PROW_NUMBER () OVER ([C[C[C[C[C[C[C[CSELECT[KCar_ID FROM Car_Score;[1@,[C[1@ [1@S[1@c[1@o[1@r[1@e
+Error: near "(": syntax error
+sqlite> Car_ID, Score FROM Car_Score;[C[C[C[C[C[C[C[C[7PORDER BY Score ) Rank,[C[C[C[C[C[C[C[C[2PROW_NUMBER () OVER ([C[C[C[C[C[C[C[CSELECT[K
+   ...> SELECTCar_ID, Score FROM Car_Score;[C[C[C[C[C[C[C[C[7PORDER BY Score ) Rank,[C[C[C[C[C[C[C[C[2PROW_NUMBER () OVER ([C[C[C[C[C[C[C[CSELECT[KROW_NUMBER () OVER ([C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@R[1@a[1P[1@A[1@N[1@K[C[1P[C[C[C[C[C[C[C[C[Corder[K[K[K[K[KORDER BY SCORE[K[K[K[Kor[K[Kcore) Rank[K[K[K[KRanking, Car_ID, Score
+   ...> FROM Car_Score;
+Error: near "(": syntax error
+sqlite> Sel[K[KELECT Car[K[K[Krowid, [KCar_ID, [KScore[K[K[K[K[KYear, Male[K[Kke, [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K, Sco[K[K[KCar_ID, Score from [K[K[K[K[KFROM cA[K[KCar_Dc[K[KScore;
+1|128|128
+2|124|124
+3|15|120
+4|113|116
+5|83|112
+6|112|110
+7|65|106
+8|91|102
+9|50|102
+10|31|102
+11|216|96
+12|228|92
+13|175|92
+14|13|92
+15|126|92
+16|63|86
+17|127|86
+18|3|84
+19|161|84
+20|180|82
+21|57|80
+22|25|78
+23|106|78
+24|36|74
+25|39|72
+26|178|72
+27|103|72
+28|84|70
+29|33|68
+30|30|66
+31|123|66
+32|1051|66
+33|41|64
+34|218|64
+35|158|64
+36|48|62
+37|38|62
+38|23|62
+39|21|62
+40|12|62
+41|53|60
+42|35|60
+43|142|58
+44|110|58
+45|156|56
+46|115|56
+47|6|54
+48|43|54
+49|37|54
+50|137|54
+51|225|52
+52|134|52
+53|5|50
+54|51|50
+55|189|50
+56|170|50
+57|88|48
+58|52|48
+59|211|48
+60|104|48
+61|232|46
+62|Showcar|44
+63|9|44
+64|8|44
+65|140|44
+66|122|44
+67|121|44
+68|118|44
+69|85|42
+70|56|42
+71|49|42
+72|45|42
+73|153|42
+74|44|40
+75|222|40
+76|207|40
+77|19|40
+78|176|40
+79|99|38
+80|20|38
+81|18|38
+82|179|38
+83|145|38
+84|78|36
+85|200|36
+86|162|36
+87|17|34
+88|10|34
+89|46|32
+90|4341|32
+91|24|32
+92|92|30
+93|7|30
+94|181|30
+95|120|30
+96|11|30
+97|59|28
+98|238|28
+99|144|28
+100|116|28
+101|98|26
+102|242|26
+103|219|26
+104|187|26
+105|14|26
+106|141|26
+107|114|26
+108|81|24
+109|241|24
+110|22|24
+111|2|24
+112|130|24
+113|93|22
+114|172|22
+115|163|22
+116|150|22
+117|100|22
+118|235|20
+119|230|20
+120|182|20
+121|167|20
+122|79|18
+123|34|18
+124|226|18
+125|Vip|16
+126|89|16
+127|183|16
+128|67|14
+129|4|14
+130|220|14
+131|193|14
+132|186|14
+133|159|14
+134|108|14
+135|95|12
+136|76|12
+137|177|12
+138|96|10
+139|94|10
+140|68|10
+141|243|10
+142|237|10
+143|190|10
+144|16|10
+145|138|10
+146|111|10
+147|102|10
+148|86|8
+149|74|8
+150|69|8
+151|42|8
+152|28|8
+153|185|8
+154|184|8
+155|75|6
+156|71|6
+157|64|6
+158|40|6
+159|212|6
+160|1|6
+161|72|4
+162|66|4
+163|174|4
+164|197|2
+165|Car_ID|0
+166|70|0
+167|101|0
+168|0|0
+sqlite> SEKECT =[K[K[K[K[K[KLECT rowid, Car_Id [K[Kd [K[KD, Score[K[K[K[K[KYear, Make, Mide[K[K[Kodel, Owndder[K[K[Ke[Kr[K[K[Ker[K[Kner [K, Score FROM cars, CarS[K_sC[K[KScore;
+Error: no such column: rowid
+sqlite> SELECT rowid, Car_ID, Year, Make, Model, Owner, Score FROM cars, Car_Score;[C[1P[1P[1P[1P[1P[1P[1P
+Error: ambiguous column name: Car_ID
+sqlite> SELECT Car_ID, Year, Make, Model, Owner, Score FROM cars, Car_Score;[K WHERE carz.[K[K.[Ks.Car_ID = Car_Score.Cars[K_ID;
+Error: ambiguous column name: Car_ID
+sqlite> SELECT Car_ID, Year, Make, Model, Owner, Score FROM cars, Car_Score WHERE cars.Car_ID = Car_Score.Car_ID;[1P[1P[1P[1P[1P[1P[1P[1P[29Pr, Score FROM cars, Car_Score; FROM cars, Car_Score WHERE cars.Car_ID = Car_Score.Car_ID;[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[29Pr, Score FROM cars, Car_Score;[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7@rowid, [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C FROM cars, Car_Score WHERE cars.Car_ID = Car_Score.Car_ID;[29Pr, Score FROM cars, Car_Score;[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7@rowid, [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C FROM cars, Car_Score WHERE cars.Car_ID = Car_Score.Car_ID;[1@r[1@,[C[1@ [1@S[1@c[1@o[1@r[1@e[C[1@C[1@a[1@r[1@_[1@S[1@c[1@o[1@r[1@e[1@.[C[C[C[C[C[C[C[C[1@ [1@c[1@a[1@r[1@s[1@.[1@C[1@a[1@r[1@_[1@I[1@D[1@,[1@,[1@\[1P[1P
+48|48|2015|Acura|TLX|Hernando|62
+124|124|2015|Jeep|Wrangler|Noel|124
+222|222|2015|Lexus|Is250|Edan|40
+207|207|1993|Honda|Civic eG|Hieronymus|40
+167|167|2016|Ford|Mystang|Nickolas|20
+159|159|2013|Hyundai|Gen coupe|Martin|14
+20|20|2009|Infiniti|G37|Aldridge|38
+178|178|2009|Honda|Oddesy|Ambros|72
+30|30|2012|Hyundai|Celoster|Quincy|66
+1|1|2012|Subaru|WRX|Palmer|6
+51|51|2015|Subaru|WRX|Temple|50
+183|183|2005|Volkswagen|Jetta|Zachery|16
+177|177|2005|Volkswagen|Jetta gli|Rupert|12
+5|5|2003|Acura|Rsx|Sayers|50
+218|218|2010|Chevy|Camaro|Horst|64
+39|39|2011|Honda|Civic|Muffin|72
+68|68|2013|Nissan|Altima|Scot|10
+10|10|2001|Nissan|S15|Harcourt|34
+67|67|2015|Subaru|Sti|Wilbur|14
+43|43|2011|Toyota|4 Runner|Georgi|54
+170|170|2014|Chevy|Cruze|Osborn|50
+216|216|2007|Chrystler|300|Asher|96
+99|99|2014|Honda|Civic si|Clyde|38
+89|89|2014|Honda|Civic si|Nealon|16
+95|95|2004|Infiniti|G35|Norry|12
+228|228|2010|Nissan|370|Baillie|92
+7|7|2014|Nissan|Sentra|Alix|30
+14|14|1990|Nissan|Skyline|Hugibert|26
+8|8|1991|Nissan|Skyline|Sigfried|44
+145|145|1990|Volkswagen|Gti|Reade|38
+102|102|2015|Honda|Accord|Correy|10
+36|36|2016|Subaru|WRX|Ozzy|74
+189|189|2012|Toyota|Fj cruiser|Derry|50
+111|111|2007|Bmw|328i|Marlon|10
+140|140|1995|Mitsu|Evo8|Roger|44
+161|161|2012|Nissan|370z|Sheffy|84
+37|37|2015|Subaru|Sti|Feodor|54
+243|243|2008|Toyota|Matrix|Sollie|10
+184|184|2010|Volkswagen|Cc|Ernie|8
+66|66|2010|Volkswagen|Gti|Teador|4
+101|101|2014|Honda|Civic|Theodore|0
+21|21|2009|Subaru|WRX|Alvis|62
+200|200|2016|Subaru|WRX|Rand|36
+2|2|2016|Bmw|M2|Jordon|24
+23|23|1998|Subaru|Legacy|Tremayne|62
+59|59|2012|Volkswagen|Golf|Rolf|28
+42|42|2001|Dodge|Viper|Rowney|8
+83|83|2014|Honda|Accord|Palmer|112
+16|16|2008|Nissan|350z|Killy|10
+181|181|2003|Volkswagen|Gti|Arri|30
+0|0|2015|Chevy|Camaro|Jordan|0
+88|88|2008|Honda|Accord|Karney|48
+25|25|2012|Mercedes|C250|Yvor|78
+176|176|2014|Mitsu|Lancer|Germaine|40
+134|134|2013|Subaru|WRX|Cooper|52
+127|127|2013|Acura|Tsx|Donal|86
+104|104|2014|Honda|Civic si|Tanner|48
+120|120|2014|Ford|Focus st|Elwyn|30
+85|85|2017|Honda|Accord|Sholom|42
+Showcar|Showcar|2014|Nissan|Gtr|Tally|44
+108|108|2013|Audi|S4|Abdul|14
+98|98|2012|Mercedes|C63|Englebert|26
+130|130|2016|Honda|Civic si|Denys|24
+12|12|1990|Nissan|240|Klemens|62
+232|232|2018|Subaru|WRX|Marmaduke|46
+Vip|Vip|2008|Volkswagen|Gli|Salomon|16
+96|96|2017|Volkswagen|Gti|Wynn|10
+15|15|2014|Audi|S4|Blane|120
+65|65|2009|Honda|Fit|Trumaine|106
+92|92|2017|Hyundai|Elantra sport|Myles|30
+179|179|2004|Volkswagen|R32|Ashlin|38
+63|63|2010|Honda|Civic|Cris|86
+35|35|2016|Honda|Civic|Gerhardt|60
+79|79|1993|Mazda|Miata|Rustin|18
+4341|4341|1992|Nissan|Rps13|Ronald|32
+156|156|2014|Volkswagen|Gli|Jamison|56
+220|220|2004|Audi|A4|Vladimir|14
+44|44|2018|Honda|Civic si|Elisha|40
+19|19|2001|Mitsu|Evo7|Jae|40
+123|123|2006|Lexus|Sc430|Patrizius|66
+57|57|2015|Scion|Frs|Arman|80
+230|230|2004|Acura|Tsx|Cullen|20
+33|33|2015|Subaru|Sti|Gideon|68
+75|75|2012|Subaru|WRX|Redford|6
+175|175|2006|Honda|Civic|Taber|92
+115|115|2001|Honda|Crv|Udale|56
+153|153|2017|Subaru|Brz|Nick|42
+76|76|2005|Subaru|Sti|Roi|12
+56|56|2009|Volkswagen|Jetta|Haily|42
+50|50|2015|Acura|TLX|Homerus|102
+163|163|2013|Mitsu|Ralliart|Shepherd|22
+53|53|2013|Subaru|WRX|Pembroke|60
+241|241|2007|Toyota|Camry|Hastings|24
+114|114|2010|Volkswagen|Gti|Roderick|26
+41|41|2012|Acura|Tsx|Barbabas|64
+116|116|2008|Audi|A4|Obidiah|28
+137|137|2017|Ford|Focus rs|Tristam|54
+212|212|2001|Lexus|Is300|Dav|6
+52|52|2007|Mazda|Speed 3|Ber|48
+93|93|2005|Acura|TL|Cesaro|22
+226|226|2008|Honda|Accord|Koenraad|18
+22|22|2007|Honda|Civic|Lowe|24
+70|70|2014|Honda|Civic|Paul|0
+128|128|2010|Infiniti|G37|Martin|128
+40|40|2007|Subaru|Legacy|Aksel|6
+238|238|1982|Volkswagen|Rabbit|Renaud|28
+31|31|2007|Honda|Fit|Jereme|102
+71|71|2008|Acura|TL|Osborn|6
+18|18|2015|Audi|S3|Greg|38
+38|38|2017|Hyundai|Elantra sport|Mill|62
+46|46|2008|Volkswagen|R32|Early|32
+49|49|1997|Acura|Integra|Ted|42
+28|28|1995|Bmw|318xi|Iggie|8
+219|219|2016|Ford|Focus rs|Spenser|26
+185|185|2013|Volkswagen|Jett|Taddeusz|8
+162|162|2014|Nissan|370z|Baudoin|36
+180|180|2011|Volkswagen|Gti|Jeromy|82
+103|103|2010|Acura|Tsx|Beaufort|72
+197|197|2010|Audi|A4|Enrico|2
+74|74|2015|Honda|Accord|Bartholomeo|8
+150|150|2006|Nissan|350z|Bar|22
+78|78|2015|Mazda|6|Nollie|36
+141|141|1993|Mazda|Miata|Diego|26
+17|17|2016|Mercedes|C43|Gustavo|34
+187|187|2007|Subaru|Legacy|Griffith|26
+69|69|2018|Subaru|WRX|Amory|8
+100|100|2006|Volvo|S60r|Elwin|22
+112|112|2008|Acura|TL|Web|110
+172|172|2014|Bmw|4|Aurthur|22
+91|91|2010|Mitsu|Lancer|Coop|102
+158|158|2007|Nissan|350z|Wally|64
+182|182|2012|Volkswagen|Cc|Darcy|20
+225|225|2016|Acura|TLX|Abbey|52
+81|81|2016|Volkswagen|GTI|Ware|24
+6|6|2016|Volkswagen|Golf r|Hamil|54
+121|121|2012|Acura|TL|Hunt|44
+211|211|2004|Acura|Tsx|Ellswerth|48
+186|186|2012|Volkswagen|Gli|Uriah|14
+4|4|2007|Honda|Civic|Evan|14
+72|72|2016|Honda|Civic si|Ken|4
+45|45|2006|Acura|TL|Kylie|42
+1051|1051|2006|Acura|Tsx|Eli|66
+84|84|2012|Mercedes|Cl63amg|Orton|70
+118|118|1993|Honda|Civic|Ginger|44
+174|174|2006|Acura|Rsx|Teodor|4
+138|138|1990|Mazda|Miata|Andras|10
+242|242|2014|Nissan|Maxima|Tris|26
+3|3|2011|Nissan|370|Barbabas|84
+193|193|2014|Nissan|Ssntra|Napoleon|14
+94|94|2004|Volkswagen|Gti|Estevan|10
+11|11|1991|Nissan|Skyline|Korey|30
+86|86|1996|Volkswagen|Jetta|Hebert|8
+9|9|1996|Nissan|240|Pierson|44
+142|142|1993|Toyota|Supra|Giorgio|58
+126|126|2010|Volkswagen|Eos|Stern|92
+144|144|2016|Volkswagen|Gti|Davidde|28
+110|110|2011|Toyota|Camry|Ugo|58
+34|34|2010|Honda|Fit|Sutherland|18
+190|190|1995|Lexus|Sc300|Parker|10
+235|235|2013|Scion|Frs|Huntley|20
+24|24|2013|Subaru|BRZ|Sauveur|32
+64|64|2004|Subaru|Forester|Carver|6
+122|122|2011|Infiniti|M37s|Terrence|44
+106|106|2007|Acura|Tl type s|Ignazio|78
+113|113|2012|Acura|Tsx sportwagon|Marcel|116
+13|13|2016|Honda|Civic 1.5t|Robbert|92
+237|237|1987|Volkswagen|Jetta|Padraic|10
+sqlite> SELECT Car_Score.Car_ID, cars.Car_ID, Year, Make, Model, Owner, Score FROM cars, Car_Score WHERE cars.Car_ID = Car_Score.Car_ID;[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@,[C[1@ [1@c[1@a[1@r[1@s[1P[C[1@s[C[1P[1@r[1P[1P[1P[1P[1P[1P[1@r[1@o[1@w[1@i[1@d[1@,[1@ 
+Error: no such column: rowid
+sqlite> SELECT rowid, Car_Score.Car_ID, cars.Car_ID, Year, Make, Model, Owner, Score FROM Car_Score, cars WHERE cars.Car_ID = Car_Score.Car_ID;[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7PCar_Score.Car_ID, cars.Car_ID, Year, Make, Model, Owner, Score FROM cars, Car_Score[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@D[1@I[1@S[1@T[1@I[1@N[C[1@C[1@T[1@ 
+48|48|2015|Acura|TLX|Hernando|62
+124|124|2015|Jeep|Wrangler|Noel|124
+222|222|2015|Lexus|Is250|Edan|40
+207|207|1993|Honda|Civic eG|Hieronymus|40
+167|167|2016|Ford|Mystang|Nickolas|20
+159|159|2013|Hyundai|Gen coupe|Martin|14
+20|20|2009|Infiniti|G37|Aldridge|38
+178|178|2009|Honda|Oddesy|Ambros|72
+30|30|2012|Hyundai|Celoster|Quincy|66
+1|1|2012|Subaru|WRX|Palmer|6
+51|51|2015|Subaru|WRX|Temple|50
+183|183|2005|Volkswagen|Jetta|Zachery|16
+177|177|2005|Volkswagen|Jetta gli|Rupert|12
+5|5|2003|Acura|Rsx|Sayers|50
+218|218|2010|Chevy|Camaro|Horst|64
+39|39|2011|Honda|Civic|Muffin|72
+68|68|2013|Nissan|Altima|Scot|10
+10|10|2001|Nissan|S15|Harcourt|34
+67|67|2015|Subaru|Sti|Wilbur|14
+43|43|2011|Toyota|4 Runner|Georgi|54
+170|170|2014|Chevy|Cruze|Osborn|50
+216|216|2007|Chrystler|300|Asher|96
+99|99|2014|Honda|Civic si|Clyde|38
+89|89|2014|Honda|Civic si|Nealon|16
+95|95|2004|Infiniti|G35|Norry|12
+228|228|2010|Nissan|370|Baillie|92
+7|7|2014|Nissan|Sentra|Alix|30
+14|14|1990|Nissan|Skyline|Hugibert|26
+8|8|1991|Nissan|Skyline|Sigfried|44
+145|145|1990|Volkswagen|Gti|Reade|38
+102|102|2015|Honda|Accord|Correy|10
+36|36|2016|Subaru|WRX|Ozzy|74
+189|189|2012|Toyota|Fj cruiser|Derry|50
+111|111|2007|Bmw|328i|Marlon|10
+140|140|1995|Mitsu|Evo8|Roger|44
+161|161|2012|Nissan|370z|Sheffy|84
+37|37|2015|Subaru|Sti|Feodor|54
+243|243|2008|Toyota|Matrix|Sollie|10
+184|184|2010|Volkswagen|Cc|Ernie|8
+66|66|2010|Volkswagen|Gti|Teador|4
+101|101|2014|Honda|Civic|Theodore|0
+21|21|2009|Subaru|WRX|Alvis|62
+200|200|2016|Subaru|WRX|Rand|36
+2|2|2016|Bmw|M2|Jordon|24
+23|23|1998|Subaru|Legacy|Tremayne|62
+59|59|2012|Volkswagen|Golf|Rolf|28
+42|42|2001|Dodge|Viper|Rowney|8
+83|83|2014|Honda|Accord|Palmer|112
+16|16|2008|Nissan|350z|Killy|10
+181|181|2003|Volkswagen|Gti|Arri|30
+0|0|2015|Chevy|Camaro|Jordan|0
+88|88|2008|Honda|Accord|Karney|48
+25|25|2012|Mercedes|C250|Yvor|78
+176|176|2014|Mitsu|Lancer|Germaine|40
+134|134|2013|Subaru|WRX|Cooper|52
+127|127|2013|Acura|Tsx|Donal|86
+104|104|2014|Honda|Civic si|Tanner|48
+120|120|2014|Ford|Focus st|Elwyn|30
+85|85|2017|Honda|Accord|Sholom|42
+Showcar|Showcar|2014|Nissan|Gtr|Tally|44
+108|108|2013|Audi|S4|Abdul|14
+98|98|2012|Mercedes|C63|Englebert|26
+130|130|2016|Honda|Civic si|Denys|24
+12|12|1990|Nissan|240|Klemens|62
+232|232|2018|Subaru|WRX|Marmaduke|46
+Vip|Vip|2008|Volkswagen|Gli|Salomon|16
+96|96|2017|Volkswagen|Gti|Wynn|10
+15|15|2014|Audi|S4|Blane|120
+65|65|2009|Honda|Fit|Trumaine|106
+92|92|2017|Hyundai|Elantra sport|Myles|30
+179|179|2004|Volkswagen|R32|Ashlin|38
+63|63|2010|Honda|Civic|Cris|86
+35|35|2016|Honda|Civic|Gerhardt|60
+79|79|1993|Mazda|Miata|Rustin|18
+4341|4341|1992|Nissan|Rps13|Ronald|32
+156|156|2014|Volkswagen|Gli|Jamison|56
+220|220|2004|Audi|A4|Vladimir|14
+44|44|2018|Honda|Civic si|Elisha|40
+19|19|2001|Mitsu|Evo7|Jae|40
+123|123|2006|Lexus|Sc430|Patrizius|66
+57|57|2015|Scion|Frs|Arman|80
+230|230|2004|Acura|Tsx|Cullen|20
+33|33|2015|Subaru|Sti|Gideon|68
+75|75|2012|Subaru|WRX|Redford|6
+175|175|2006|Honda|Civic|Taber|92
+115|115|2001|Honda|Crv|Udale|56
+153|153|2017|Subaru|Brz|Nick|42
+76|76|2005|Subaru|Sti|Roi|12
+56|56|2009|Volkswagen|Jetta|Haily|42
+50|50|2015|Acura|TLX|Homerus|102
+163|163|2013|Mitsu|Ralliart|Shepherd|22
+53|53|2013|Subaru|WRX|Pembroke|60
+241|241|2007|Toyota|Camry|Hastings|24
+114|114|2010|Volkswagen|Gti|Roderick|26
+41|41|2012|Acura|Tsx|Barbabas|64
+116|116|2008|Audi|A4|Obidiah|28
+137|137|2017|Ford|Focus rs|Tristam|54
+212|212|2001|Lexus|Is300|Dav|6
+52|52|2007|Mazda|Speed 3|Ber|48
+93|93|2005|Acura|TL|Cesaro|22
+226|226|2008|Honda|Accord|Koenraad|18
+22|22|2007|Honda|Civic|Lowe|24
+70|70|2014|Honda|Civic|Paul|0
+128|128|2010|Infiniti|G37|Martin|128
+40|40|2007|Subaru|Legacy|Aksel|6
+238|238|1982|Volkswagen|Rabbit|Renaud|28
+31|31|2007|Honda|Fit|Jereme|102
+71|71|2008|Acura|TL|Osborn|6
+18|18|2015|Audi|S3|Greg|38
+38|38|2017|Hyundai|Elantra sport|Mill|62
+46|46|2008|Volkswagen|R32|Early|32
+49|49|1997|Acura|Integra|Ted|42
+28|28|1995|Bmw|318xi|Iggie|8
+219|219|2016|Ford|Focus rs|Spenser|26
+185|185|2013|Volkswagen|Jett|Taddeusz|8
+162|162|2014|Nissan|370z|Baudoin|36
+180|180|2011|Volkswagen|Gti|Jeromy|82
+103|103|2010|Acura|Tsx|Beaufort|72
+197|197|2010|Audi|A4|Enrico|2
+74|74|2015|Honda|Accord|Bartholomeo|8
+150|150|2006|Nissan|350z|Bar|22
+78|78|2015|Mazda|6|Nollie|36
+141|141|1993|Mazda|Miata|Diego|26
+17|17|2016|Mercedes|C43|Gustavo|34
+187|187|2007|Subaru|Legacy|Griffith|26
+69|69|2018|Subaru|WRX|Amory|8
+100|100|2006|Volvo|S60r|Elwin|22
+112|112|2008|Acura|TL|Web|110
+172|172|2014|Bmw|4|Aurthur|22
+91|91|2010|Mitsu|Lancer|Coop|102
+158|158|2007|Nissan|350z|Wally|64
+182|182|2012|Volkswagen|Cc|Darcy|20
+225|225|2016|Acura|TLX|Abbey|52
+81|81|2016|Volkswagen|GTI|Ware|24
+6|6|2016|Volkswagen|Golf r|Hamil|54
+121|121|2012|Acura|TL|Hunt|44
+211|211|2004|Acura|Tsx|Ellswerth|48
+186|186|2012|Volkswagen|Gli|Uriah|14
+4|4|2007|Honda|Civic|Evan|14
+72|72|2016|Honda|Civic si|Ken|4
+45|45|2006|Acura|TL|Kylie|42
+1051|1051|2006|Acura|Tsx|Eli|66
+84|84|2012|Mercedes|Cl63amg|Orton|70
+118|118|1993|Honda|Civic|Ginger|44
+174|174|2006|Acura|Rsx|Teodor|4
+138|138|1990|Mazda|Miata|Andras|10
+242|242|2014|Nissan|Maxima|Tris|26
+3|3|2011|Nissan|370|Barbabas|84
+193|193|2014|Nissan|Ssntra|Napoleon|14
+94|94|2004|Volkswagen|Gti|Estevan|10
+11|11|1991|Nissan|Skyline|Korey|30
+86|86|1996|Volkswagen|Jetta|Hebert|8
+9|9|1996|Nissan|240|Pierson|44
+142|142|1993|Toyota|Supra|Giorgio|58
+126|126|2010|Volkswagen|Eos|Stern|92
+144|144|2016|Volkswagen|Gti|Davidde|28
+110|110|2011|Toyota|Camry|Ugo|58
+34|34|2010|Honda|Fit|Sutherland|18
+190|190|1995|Lexus|Sc300|Parker|10
+235|235|2013|Scion|Frs|Huntley|20
+24|24|2013|Subaru|BRZ|Sauveur|32
+64|64|2004|Subaru|Forester|Carver|6
+122|122|2011|Infiniti|M37s|Terrence|44
+106|106|2007|Acura|Tl type s|Ignazio|78
+113|113|2012|Acura|Tsx sportwagon|Marcel|116
+13|13|2016|Honda|Civic 1.5t|Robbert|92
+237|237|1987|Volkswagen|Jetta|Padraic|10
+sqlite> SELECT Car_Id, Year, Make, Model, Ownder,[K[K[K[Kner[K[K[Ker, Score[1@r[1@o[1@w[1@I[1P[1@i[1@d[1@,[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+   ...> FROM cars
+   ...> INNER JOIN Car_Score ON cars.CarID = Car_Score.CarID;
+Error: no such column: rowid
+sqlite> INNER JOIN Car_Score ON cars.CarID = Car_Score.CarID;[C[C[C[C[C[C[C[CFROM cars[KSELECT rowid, Car_Id, Year, Make, Model, Owner, Score
+   ...> SELECT rowid, Car_Id, Year, Make, Model, Owner, Score[C[C[C[C[C[C[C[CINNER JOIN Car_Score ON cars.CarID = Car_Score.CarID;
+Error: near "INNER": syntax error
+sqlite> INNER JOIN Car_Score ON cars.CarID = Car_Score.CarID;
+Error: near "INNER": syntax error
+sqlite> INNER JOIN Car_Score ON cars.CarID = Car_Score.CarID;[C[C[C[C[C[C[C[CSELECT rowid, Car_Id, Year, Make, Model, Owner, Score[C[C[C[C[C[C[C[CINNER JOIN Car_Score ON cars.CarID = Car_Score.CarID;[C[C[C[C[C[C[C[CFROM cars[KSELECT rowid, Car_Id, Year, Make, Model, Owner, Score[C[1P[1P[1P[1P[1P[1P[1P[1P[1@ 
+   ...> SELECT Car_Id, Year, Make, Model, Owner, Score[C[C[C[C[C[C[C[CINNER JOIN Car_Score ON cars.CarID = Car_Score.CarID;[C[C[C[C[C[C[C[CSELECT rowid, Car_Id, Year, Make, Model, Owner, Score[C[C[C[C[C[C[C[CINNER JOIN Car_Score ON cars.CarID = Car_Score.CarID;[C[C[C[C[C[C[C[CFROM cars[KSELECT rowid, Car_Id, Year, Make, Model, Owner, Score[C[C[C[C[C[C[C[CFROM cars[K
+   ...> FROM carsSELECT Car_Id, Year, Make, Model, Owner, Score[C[C[C[C[C[C[C[CINNER JOIN Car_Score ON cars.CarID = Car_Score.CarID;[C[C[C[C[C[C[C[C[7PSELECT Car_Id, Year, Make, Model, Owner, Score[C[C[C[C[C[C[C[CINNER JOIN Car_Score ON cars.CarID = Car_Score.CarID;
+Error: ambiguous column name: Car_Id
+sqlite> INNER JOIN Car_Score ON cars.CarID = Car_Score.CarID;[C[C[C[C[C[C[C[CFROM cars[KSELECT Car_Id, Year, Make, Model, Owner, Score[1@c[1@a[1@r[1@s[1@.
+   ...> SELECT cars.Car_Id, Year, Make, Model, Owner, Score[C[C[C[C[C[C[C[CINNER JOIN Car_Score ON cars.CarID = Car_Score.CarID;[C[C[C[C[C[C[C[CFROM cars[KSELECT Car_Id, Year, Make, Model, Owner, Score[C[C[C[C[C[C[C[CFROM cars[K
+   ...> FROM carsSELECT cars.Car_Id, Year, Make, Model, Owner, Score[C[C[C[C[C[C[C[CINNER JOIN Car_Score ON cars.CarID = Car_Score.CarID;
+Error: no such column: cars.CarID
+sqlite> INNER JOIN Car_Score ON cars.CarID = Car_Score.CarID;[C[C[C[C[C[C[C[CFROM cars[KSELECT cars.Car_Id, Year, Make, Model, Owner, Score[C[C[C[C[C[C[C[CINNER JOIN Car_Score ON cars.CarID = Car_Score.CarID;[C[C[C[C[C[C[C[C[2PSELECT cars.Car_Id, Year, Make, Model, Owner, Score[1P[1@D
+   ...> SELECT cars.Car_ID, Year, Make, Model, Owner, Score[C[C[C[C[C[C[C[CINNER JOIN Car_Score ON cars.CarID = Car_Score.CarID;[C[C[C[C[C[C[C[CFROM cars[K
+   ...> FROM carsSELECT cars.Car_ID, Year, Make, Model, Owner, Score[C[C[C[C[C[C[C[CINNER JOIN Car_Score ON cars.CarID = Car_Score.CarID;
+Error: no such column: cars.CarID
+sqlite> .schema [K[K[K[K[K[K[K[KINNER JOIN Car_Score ON cars.CarID = Car_Score.CarID;[C[C[C[C[C[C[C[CFROM cars[KSELECT cars.Car_ID, Year, Make, Model, Owner, Score
+   ...> SELECT cars.Car_ID, Year, Make, Model, Owner, Score[C[C[C[C[C[C[C[CINNER JOIN Car_Score ON cars.CarID = Car_Score.CarID;[C[C[C[C[C[C[C[CFROM cars[K
+   ...> FROM carsSELECT cars.Car_ID, Year, Make, Model, Owner, Score[C[C[C[C[C[C[C[CINNER JOIN Car_Score ON cars.CarID = Car_Score.CarID;_ID;[1@_
+48|2015|Acura|TLX|Hernando|62
+124|2015|Jeep|Wrangler|Noel|124
+222|2015|Lexus|Is250|Edan|40
+207|1993|Honda|Civic eG|Hieronymus|40
+167|2016|Ford|Mystang|Nickolas|20
+159|2013|Hyundai|Gen coupe|Martin|14
+20|2009|Infiniti|G37|Aldridge|38
+178|2009|Honda|Oddesy|Ambros|72
+30|2012|Hyundai|Celoster|Quincy|66
+1|2012|Subaru|WRX|Palmer|6
+51|2015|Subaru|WRX|Temple|50
+183|2005|Volkswagen|Jetta|Zachery|16
+177|2005|Volkswagen|Jetta gli|Rupert|12
+5|2003|Acura|Rsx|Sayers|50
+218|2010|Chevy|Camaro|Horst|64
+39|2011|Honda|Civic|Muffin|72
+68|2013|Nissan|Altima|Scot|10
+10|2001|Nissan|S15|Harcourt|34
+67|2015|Subaru|Sti|Wilbur|14
+43|2011|Toyota|4 Runner|Georgi|54
+170|2014|Chevy|Cruze|Osborn|50
+216|2007|Chrystler|300|Asher|96
+99|2014|Honda|Civic si|Clyde|38
+89|2014|Honda|Civic si|Nealon|16
+95|2004|Infiniti|G35|Norry|12
+228|2010|Nissan|370|Baillie|92
+7|2014|Nissan|Sentra|Alix|30
+14|1990|Nissan|Skyline|Hugibert|26
+8|1991|Nissan|Skyline|Sigfried|44
+145|1990|Volkswagen|Gti|Reade|38
+102|2015|Honda|Accord|Correy|10
+36|2016|Subaru|WRX|Ozzy|74
+189|2012|Toyota|Fj cruiser|Derry|50
+111|2007|Bmw|328i|Marlon|10
+140|1995|Mitsu|Evo8|Roger|44
+161|2012|Nissan|370z|Sheffy|84
+37|2015|Subaru|Sti|Feodor|54
+243|2008|Toyota|Matrix|Sollie|10
+184|2010|Volkswagen|Cc|Ernie|8
+66|2010|Volkswagen|Gti|Teador|4
+101|2014|Honda|Civic|Theodore|0
+21|2009|Subaru|WRX|Alvis|62
+200|2016|Subaru|WRX|Rand|36
+2|2016|Bmw|M2|Jordon|24
+23|1998|Subaru|Legacy|Tremayne|62
+59|2012|Volkswagen|Golf|Rolf|28
+42|2001|Dodge|Viper|Rowney|8
+83|2014|Honda|Accord|Palmer|112
+16|2008|Nissan|350z|Killy|10
+181|2003|Volkswagen|Gti|Arri|30
+0|2015|Chevy|Camaro|Jordan|0
+88|2008|Honda|Accord|Karney|48
+25|2012|Mercedes|C250|Yvor|78
+176|2014|Mitsu|Lancer|Germaine|40
+134|2013|Subaru|WRX|Cooper|52
+127|2013|Acura|Tsx|Donal|86
+104|2014|Honda|Civic si|Tanner|48
+120|2014|Ford|Focus st|Elwyn|30
+85|2017|Honda|Accord|Sholom|42
+Showcar|2014|Nissan|Gtr|Tally|44
+108|2013|Audi|S4|Abdul|14
+98|2012|Mercedes|C63|Englebert|26
+130|2016|Honda|Civic si|Denys|24
+12|1990|Nissan|240|Klemens|62
+232|2018|Subaru|WRX|Marmaduke|46
+Vip|2008|Volkswagen|Gli|Salomon|16
+96|2017|Volkswagen|Gti|Wynn|10
+15|2014|Audi|S4|Blane|120
+65|2009|Honda|Fit|Trumaine|106
+92|2017|Hyundai|Elantra sport|Myles|30
+179|2004|Volkswagen|R32|Ashlin|38
+63|2010|Honda|Civic|Cris|86
+35|2016|Honda|Civic|Gerhardt|60
+79|1993|Mazda|Miata|Rustin|18
+4341|1992|Nissan|Rps13|Ronald|32
+156|2014|Volkswagen|Gli|Jamison|56
+220|2004|Audi|A4|Vladimir|14
+44|2018|Honda|Civic si|Elisha|40
+19|2001|Mitsu|Evo7|Jae|40
+123|2006|Lexus|Sc430|Patrizius|66
+57|2015|Scion|Frs|Arman|80
+230|2004|Acura|Tsx|Cullen|20
+33|2015|Subaru|Sti|Gideon|68
+75|2012|Subaru|WRX|Redford|6
+175|2006|Honda|Civic|Taber|92
+115|2001|Honda|Crv|Udale|56
+153|2017|Subaru|Brz|Nick|42
+76|2005|Subaru|Sti|Roi|12
+56|2009|Volkswagen|Jetta|Haily|42
+50|2015|Acura|TLX|Homerus|102
+163|2013|Mitsu|Ralliart|Shepherd|22
+53|2013|Subaru|WRX|Pembroke|60
+241|2007|Toyota|Camry|Hastings|24
+114|2010|Volkswagen|Gti|Roderick|26
+41|2012|Acura|Tsx|Barbabas|64
+116|2008|Audi|A4|Obidiah|28
+137|2017|Ford|Focus rs|Tristam|54
+212|2001|Lexus|Is300|Dav|6
+52|2007|Mazda|Speed 3|Ber|48
+93|2005|Acura|TL|Cesaro|22
+226|2008|Honda|Accord|Koenraad|18
+22|2007|Honda|Civic|Lowe|24
+70|2014|Honda|Civic|Paul|0
+128|2010|Infiniti|G37|Martin|128
+40|2007|Subaru|Legacy|Aksel|6
+238|1982|Volkswagen|Rabbit|Renaud|28
+31|2007|Honda|Fit|Jereme|102
+71|2008|Acura|TL|Osborn|6
+18|2015|Audi|S3|Greg|38
+38|2017|Hyundai|Elantra sport|Mill|62
+46|2008|Volkswagen|R32|Early|32
+49|1997|Acura|Integra|Ted|42
+28|1995|Bmw|318xi|Iggie|8
+219|2016|Ford|Focus rs|Spenser|26
+185|2013|Volkswagen|Jett|Taddeusz|8
+162|2014|Nissan|370z|Baudoin|36
+180|2011|Volkswagen|Gti|Jeromy|82
+103|2010|Acura|Tsx|Beaufort|72
+197|2010|Audi|A4|Enrico|2
+74|2015|Honda|Accord|Bartholomeo|8
+150|2006|Nissan|350z|Bar|22
+78|2015|Mazda|6|Nollie|36
+141|1993|Mazda|Miata|Diego|26
+17|2016|Mercedes|C43|Gustavo|34
+187|2007|Subaru|Legacy|Griffith|26
+69|2018|Subaru|WRX|Amory|8
+100|2006|Volvo|S60r|Elwin|22
+112|2008|Acura|TL|Web|110
+172|2014|Bmw|4|Aurthur|22
+91|2010|Mitsu|Lancer|Coop|102
+158|2007|Nissan|350z|Wally|64
+182|2012|Volkswagen|Cc|Darcy|20
+225|2016|Acura|TLX|Abbey|52
+81|2016|Volkswagen|GTI|Ware|24
+6|2016|Volkswagen|Golf r|Hamil|54
+121|2012|Acura|TL|Hunt|44
+211|2004|Acura|Tsx|Ellswerth|48
+186|2012|Volkswagen|Gli|Uriah|14
+4|2007|Honda|Civic|Evan|14
+72|2016|Honda|Civic si|Ken|4
+45|2006|Acura|TL|Kylie|42
+1051|2006|Acura|Tsx|Eli|66
+84|2012|Mercedes|Cl63amg|Orton|70
+118|1993|Honda|Civic|Ginger|44
+174|2006|Acura|Rsx|Teodor|4
+138|1990|Mazda|Miata|Andras|10
+242|2014|Nissan|Maxima|Tris|26
+3|2011|Nissan|370|Barbabas|84
+193|2014|Nissan|Ssntra|Napoleon|14
+94|2004|Volkswagen|Gti|Estevan|10
+11|1991|Nissan|Skyline|Korey|30
+86|1996|Volkswagen|Jetta|Hebert|8
+9|1996|Nissan|240|Pierson|44
+142|1993|Toyota|Supra|Giorgio|58
+126|2010|Volkswagen|Eos|Stern|92
+144|2016|Volkswagen|Gti|Davidde|28
+110|2011|Toyota|Camry|Ugo|58
+34|2010|Honda|Fit|Sutherland|18
+190|1995|Lexus|Sc300|Parker|10
+235|2013|Scion|Frs|Huntley|20
+24|2013|Subaru|BRZ|Sauveur|32
+64|2004|Subaru|Forester|Carver|6
+122|2011|Infiniti|M37s|Terrence|44
+106|2007|Acura|Tl type s|Ignazio|78
+113|2012|Acura|Tsx sportwagon|Marcel|116
+13|2016|Honda|Civic 1.5t|Robbert|92
+237|1987|Volkswagen|Jetta|Padraic|10
+sqlite> INNER JOIN Car_Score ON cars.Car_ID = Car_Score.Car_ID;[C[C[C[C[C[C[C[C[KINNER JOIN Car_Score ON cars.Car_ID = Car_Score.Car_ID;[C[C[C[C[C[C[C[CFROM cars[KSELECT cars.Car_ID, Year, Make, Model, Owner, Score[C[C[C[C[C[C[C[C[CFROM cars[KINNER JOIN Car_Score ON cars.Car_ID = Car_Score.Car_ID;[C[C[C[C[C[C[C[CFROM cars[KSELECT cars.Car_ID, Year, Make, Model, Owner, Score[C[C[C[C[C[C[C[CINNER JOIN Car_Score ON cars.CarID = Car_Score.CarID;[C[C[C[C[C[C[C[C[2PSELECT cars.Car_ID, Year, Make, Model, Owner, Score[C[C[C[C[C[C[C[CFROM cars[KINNER JOIN Car_Score ON cars.Car_ID = Car_Score.Car_ID;[C[C[C[C[C[C[C[C[KINNER JOIN Car_Score ON cars.Car_ID = Car_Score.Car_ID;[C[C[C[C[C[C[C[CFROM cars[KSELECT cars.Car_ID, Year, Make, Model, Owner, Score[C[C[C[C[C[C[C[CINNER JOIN Car_Score ON cars.CarID = Car_Score.CarID;[C[C[C[C[C[C[C[CFROM cars[KINNER JOIN Car_Score ON cars.CarID = Car_Score.CarID;[C[C[C[C[C[C[C[C[2PSELECT cars.Car_ID, Year, Make, Model, Owner, Score[C[C[C[C[C[C[C[CFROM cars[KINNER JOIN Car_Score ON cars.Car_ID = Car_Score.Car_ID;[C[C[C[C[C[C[C[CFROM cars[KSELECT cars.Car_ID, Year, Make, Model, Owner, Score[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K.quit
+]0;Rafid.Karim94@sol26:~/CISC3140[Rafid.Karim94@sol26 CISC3140]$ exit
+exit
+
+Script done on Tue 08 Mar 2022 01:18:03 PM EST
