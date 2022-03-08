@@ -1549,3 +1549,560 @@ sqlite> .quit
 exit
 
 Script done on Mon 07 Mar 2022 11:48:04 PM EST
+
+/// CONTINUED ONTO PC AGAIN FOR IMPORT COMMAND
+
+
+PS C:\Users\rafid\Desktop\CISC3140> git pull
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 3), reused 6 (delta 3), pack-reused 0
+Unpacking objects: 100% (6/6), 27.75 KiB | 2.52 MiB/s, done.
+From https://github.com/Rafeedmefood/CISC3140
+   efd6ea7..4bdabef  main       -> origin/main
+Updating efd6ea7..4bdabef
+Fast-forward
+ Makefile            |   2 +-
+ copy_of_scripts.TXT | 580 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ output.csv          | 328 ++++++++++++++---------------
+ script.awk          |   2 +-
+ 4 files changed, 746 insertions(+), 166 deletions(-)
+PS C:\Users\rafid\Desktop\CISC3140> sqlite3 .\base.db
+SQLite version 3.38.0 2022-02-22 18:58:40
+Enter ".help" for usage hints.
+sqlite> .mode csv
+sqlite> .import output.csv scores
+Columns renamed during .import output.csv due to duplicates:
+"128" to "128_2",
+"128" to "128_6"
+sqlite> SELECT * FROM scores
+   ...> ;
+2,124,2015,Jeep,Wrangler,124
+3,15,2014,Audi,S4,120
+4,113,2012,Acura,"Tsx sportwagon",116
+5,83,2014,Honda,Accord,112
+6,112,2008,Acura,TL,110
+7,65,2009,Honda,Fit,106
+8,91,2010,Mitsu,Lancer,102
+9,50,2015,Acura,TLX,102
+10,31,2007,Honda,Fit,102
+11,216,2007,Chrystler,300,96
+12,228,2010,Nissan,370,92
+13,175,2006,Honda,Civic,92
+14,13,2016,Honda,"Civic 1.5t",92
+15,126,2010,Volkswagen,Eos,92
+16,63,2010,Honda,Civic,86
+17,127,2013,Acura,Tsx,86
+18,3,2011,Nissan,370,84
+19,161,2012,Nissan,370z,84
+20,180,2011,Volkswagen,Gti,82
+21,57,2015,Scion,Frs,80
+22,25,2012,Mercedes,C250,78
+23,106,2007,Acura,"Tl type s",78
+24,36,2016,Subaru,WRX,74
+25,39,2011,Honda,Civic,72
+26,178,2009,Honda,Oddesy,72
+27,103,2010,Acura,Tsx,72
+28,84,2012,Mercedes,Cl63amg,70
+29,33,2015,Subaru,Sti,68
+30,30,2012,Hyundai,Celoster,66
+31,123,2006,Lexus,Sc430,66
+32,1051,2006,Acura,Tsx,66
+33,41,2012,Acura,Tsx,64
+34,218,2010,Chevy,Camaro,64
+35,158,2007,Nissan,350z,64
+36,48,2015,Acura,TLX,62
+37,38,2017,Hyundai,"Elantra sport",62
+38,23,1998,Subaru,Legacy,62
+39,21,2009,Subaru,WRX,62
+40,12,1990,Nissan,240,62
+41,53,2013,Subaru,WRX,60
+42,35,2016,Honda,Civic,60
+43,142,1993,Toyota,Supra,58
+44,110,2011,Toyota,Camry,58
+45,156,2014,Volkswagen,Gli,56
+46,115,2001,Honda,Crv,56
+47,6,2016,Volkswagen,"Golf r",54
+48,43,2011,Toyota,"4 Runner",54
+49,37,2015,Subaru,Sti,54
+50,137,2017,Ford,"Focus rs",54
+51,225,2016,Acura,TLX,52
+52,134,2013,Subaru,WRX,52
+53,5,2003,Acura,Rsx,50
+54,51,2015,Subaru,WRX,50
+55,189,2012,Toyota,"Fj cruiser",50
+56,170,2014,Chevy,Cruze,50
+57,88,2008,Honda,Accord,48
+58,52,2007,Mazda,"Speed 3",48
+59,211,2004,Acura,Tsx,48
+60,104,2014,Honda,"Civic si",48
+61,232,2018,Subaru,WRX,46
+62,Showcar,2014,Nissan,Gtr,44
+63,9,1996,Nissan,240,44
+64,8,1991,Nissan,Skyline,44
+65,140,1995,Mitsu,Evo8,44
+66,122,2011,Infiniti,M37s,44
+67,121,2012,Acura,TL,44
+68,118,1993,Honda,Civic,44
+69,85,2017,Honda,Accord,42
+70,56,2009,Volkswagen,Jetta,42
+71,49,1997,Acura,Integra,42
+72,45,2006,Acura,TL,42
+73,153,2017,Subaru,Brz,42
+74,44,2018,Honda,"Civic si",40
+75,222,2015,Lexus,Is250,40
+76,207,1993,Honda,"Civic eG",40
+77,19,2001,Mitsu,Evo7,40
+78,176,2014,Mitsu,Lancer,40
+79,99,2014,Honda,"Civic si",38
+80,20,2009,Infiniti,G37,38
+81,18,2015,Audi,S3,38
+82,179,2004,Volkswagen,R32,38
+83,145,1990,Volkswagen,Gti,38
+84,78,2015,Mazda,6,36
+85,200,2016,Subaru,WRX,36
+86,162,2014,Nissan,370z,36
+87,17,2016,Mercedes,C43,34
+88,10,2001,Nissan,S15,34
+89,46,2008,Volkswagen,R32,32
+90,4341,1992,Nissan,Rps13,32
+91,24,2013,Subaru,BRZ,32
+92,92,2017,Hyundai,"Elantra sport",30
+93,7,2014,Nissan,Sentra,30
+94,181,2003,Volkswagen,Gti,30
+95,120,2014,Ford,"Focus st",30
+96,11,1991,Nissan,Skyline,30
+97,59,2012,Volkswagen,Golf,28
+98,238,1982,Volkswagen,Rabbit,28
+99,144,2016,Volkswagen,Gti,28
+100,116,2008,Audi,A4,28
+101,98,2012,Mercedes,C63,26
+102,242,2014,Nissan,Maxima,26
+103,219,2016,Ford,"Focus rs",26
+104,187,2007,Subaru,Legacy,26
+105,14,1990,Nissan,Skyline,26
+106,141,1993,Mazda,Miata,26
+107,114,2010,Volkswagen,Gti,26
+108,81,2016,Volkswagen,GTI,24
+109,241,2007,Toyota,Camry,24
+110,22,2007,Honda,Civic,24
+111,2,2016,Bmw,M2,24
+112,130,2016,Honda,"Civic si",24
+113,93,2005,Acura,TL,22
+114,172,2014,Bmw,4,22
+115,163,2013,Mitsu,Ralliart,22
+116,150,2006,Nissan,350z,22
+117,100,2006,Volvo,S60r,22
+118,235,2013,Scion,Frs,20
+119,230,2004,Acura,Tsx,20
+120,182,2012,Volkswagen,Cc,20
+121,167,2016,Ford,Mystang,20
+122,79,1993,Mazda,Miata,18
+123,34,2010,Honda,Fit,18
+124,226,2008,Honda,Accord,18
+125,Vip,2008,Volkswagen,Gli,16
+126,89,2014,Honda,"Civic si",16
+127,183,2005,Volkswagen,Jetta,16
+128,67,2015,Subaru,Sti,14
+129,4,2007,Honda,Civic,14
+130,220,2004,Audi,A4,14
+131,193,2014,Nissan,Ssntra,14
+132,186,2012,Volkswagen,Gli,14
+133,159,2013,Hyundai,"Gen coupe",14
+134,108,2013,Audi,S4,14
+135,95,2004,Infiniti,G35,12
+136,76,2005,Subaru,Sti,12
+137,177,2005,Volkswagen,"Jetta gli",12
+138,96,2017,Volkswagen,Gti,10
+139,94,2004,Volkswagen,Gti,10
+140,68,2013,Nissan,Altima,10
+141,243,2008,Toyota,Matrix,10
+142,237,1987,Volkswagen,Jetta,10
+143,190,1995,Lexus,Sc300,10
+144,16,2008,Nissan,350z,10
+145,138,1990,Mazda,Miata,10
+146,111,2007,Bmw,328i,10
+147,102,2015,Honda,Accord,10
+148,86,1996,Volkswagen,Jetta,8
+149,74,2015,Honda,Accord,8
+150,69,2018,Subaru,WRX,8
+151,42,2001,Dodge,Viper,8
+152,28,1995,Bmw,318xi,8
+153,185,2013,Volkswagen,Jett,8
+154,184,2010,Volkswagen,Cc,8
+155,75,2012,Subaru,WRX,6
+156,71,2008,Acura,TL,6
+157,64,2004,Subaru,Forester,6
+158,40,2007,Subaru,Legacy,6
+159,212,2001,Lexus,Is300,6
+160,1,2012,Subaru,WRX,6
+161,72,2016,Honda,"Civic si",4
+162,66,2010,Volkswagen,Gti,4
+163,174,2006,Acura,Rsx,4
+164,197,2010,Audi,A4,2
+165,Car_ID,Year,Make,Model,0
+166,70,2014,Honda,Civic,0
+167,101,2014,Honda,Civic,0
+168,0,2015,Chevy,Camaro,0
+sqlite> DROP TABLE scores
+   ...> ;
+sqlite> .table
+Car_Score  cars       judges     temp
+sqlite> CREATE TABLE scores(rank, Car_ID, Year, Make, Model, Score);
+sqlite> .import output.csv scores
+sqlite> SELECT * FROM scores
+   ...> ;
+1,128,2010,Infiniti,G37,128
+2,124,2015,Jeep,Wrangler,124
+3,15,2014,Audi,S4,120
+4,113,2012,Acura,"Tsx sportwagon",116
+5,83,2014,Honda,Accord,112
+6,112,2008,Acura,TL,110
+7,65,2009,Honda,Fit,106
+8,91,2010,Mitsu,Lancer,102
+9,50,2015,Acura,TLX,102
+10,31,2007,Honda,Fit,102
+11,216,2007,Chrystler,300,96
+12,228,2010,Nissan,370,92
+13,175,2006,Honda,Civic,92
+14,13,2016,Honda,"Civic 1.5t",92
+15,126,2010,Volkswagen,Eos,92
+16,63,2010,Honda,Civic,86
+17,127,2013,Acura,Tsx,86
+18,3,2011,Nissan,370,84
+19,161,2012,Nissan,370z,84
+20,180,2011,Volkswagen,Gti,82
+21,57,2015,Scion,Frs,80
+22,25,2012,Mercedes,C250,78
+23,106,2007,Acura,"Tl type s",78
+24,36,2016,Subaru,WRX,74
+25,39,2011,Honda,Civic,72
+26,178,2009,Honda,Oddesy,72
+27,103,2010,Acura,Tsx,72
+28,84,2012,Mercedes,Cl63amg,70
+29,33,2015,Subaru,Sti,68
+30,30,2012,Hyundai,Celoster,66
+31,123,2006,Lexus,Sc430,66
+32,1051,2006,Acura,Tsx,66
+33,41,2012,Acura,Tsx,64
+34,218,2010,Chevy,Camaro,64
+35,158,2007,Nissan,350z,64
+36,48,2015,Acura,TLX,62
+37,38,2017,Hyundai,"Elantra sport",62
+38,23,1998,Subaru,Legacy,62
+39,21,2009,Subaru,WRX,62
+40,12,1990,Nissan,240,62
+41,53,2013,Subaru,WRX,60
+42,35,2016,Honda,Civic,60
+43,142,1993,Toyota,Supra,58
+44,110,2011,Toyota,Camry,58
+45,156,2014,Volkswagen,Gli,56
+46,115,2001,Honda,Crv,56
+47,6,2016,Volkswagen,"Golf r",54
+48,43,2011,Toyota,"4 Runner",54
+49,37,2015,Subaru,Sti,54
+50,137,2017,Ford,"Focus rs",54
+51,225,2016,Acura,TLX,52
+52,134,2013,Subaru,WRX,52
+53,5,2003,Acura,Rsx,50
+54,51,2015,Subaru,WRX,50
+55,189,2012,Toyota,"Fj cruiser",50
+56,170,2014,Chevy,Cruze,50
+57,88,2008,Honda,Accord,48
+58,52,2007,Mazda,"Speed 3",48
+59,211,2004,Acura,Tsx,48
+60,104,2014,Honda,"Civic si",48
+61,232,2018,Subaru,WRX,46
+62,Showcar,2014,Nissan,Gtr,44
+63,9,1996,Nissan,240,44
+64,8,1991,Nissan,Skyline,44
+65,140,1995,Mitsu,Evo8,44
+66,122,2011,Infiniti,M37s,44
+67,121,2012,Acura,TL,44
+68,118,1993,Honda,Civic,44
+69,85,2017,Honda,Accord,42
+70,56,2009,Volkswagen,Jetta,42
+71,49,1997,Acura,Integra,42
+72,45,2006,Acura,TL,42
+73,153,2017,Subaru,Brz,42
+74,44,2018,Honda,"Civic si",40
+75,222,2015,Lexus,Is250,40
+76,207,1993,Honda,"Civic eG",40
+77,19,2001,Mitsu,Evo7,40
+78,176,2014,Mitsu,Lancer,40
+79,99,2014,Honda,"Civic si",38
+80,20,2009,Infiniti,G37,38
+81,18,2015,Audi,S3,38
+82,179,2004,Volkswagen,R32,38
+83,145,1990,Volkswagen,Gti,38
+84,78,2015,Mazda,6,36
+85,200,2016,Subaru,WRX,36
+86,162,2014,Nissan,370z,36
+87,17,2016,Mercedes,C43,34
+88,10,2001,Nissan,S15,34
+89,46,2008,Volkswagen,R32,32
+90,4341,1992,Nissan,Rps13,32
+91,24,2013,Subaru,BRZ,32
+92,92,2017,Hyundai,"Elantra sport",30
+93,7,2014,Nissan,Sentra,30
+94,181,2003,Volkswagen,Gti,30
+95,120,2014,Ford,"Focus st",30
+96,11,1991,Nissan,Skyline,30
+97,59,2012,Volkswagen,Golf,28
+98,238,1982,Volkswagen,Rabbit,28
+99,144,2016,Volkswagen,Gti,28
+100,116,2008,Audi,A4,28
+101,98,2012,Mercedes,C63,26
+102,242,2014,Nissan,Maxima,26
+103,219,2016,Ford,"Focus rs",26
+104,187,2007,Subaru,Legacy,26
+105,14,1990,Nissan,Skyline,26
+106,141,1993,Mazda,Miata,26
+107,114,2010,Volkswagen,Gti,26
+108,81,2016,Volkswagen,GTI,24
+109,241,2007,Toyota,Camry,24
+110,22,2007,Honda,Civic,24
+111,2,2016,Bmw,M2,24
+112,130,2016,Honda,"Civic si",24
+113,93,2005,Acura,TL,22
+114,172,2014,Bmw,4,22
+115,163,2013,Mitsu,Ralliart,22
+116,150,2006,Nissan,350z,22
+117,100,2006,Volvo,S60r,22
+118,235,2013,Scion,Frs,20
+119,230,2004,Acura,Tsx,20
+120,182,2012,Volkswagen,Cc,20
+121,167,2016,Ford,Mystang,20
+122,79,1993,Mazda,Miata,18
+123,34,2010,Honda,Fit,18
+124,226,2008,Honda,Accord,18
+125,Vip,2008,Volkswagen,Gli,16
+126,89,2014,Honda,"Civic si",16
+127,183,2005,Volkswagen,Jetta,16
+128,67,2015,Subaru,Sti,14
+129,4,2007,Honda,Civic,14
+130,220,2004,Audi,A4,14
+131,193,2014,Nissan,Ssntra,14
+132,186,2012,Volkswagen,Gli,14
+133,159,2013,Hyundai,"Gen coupe",14
+134,108,2013,Audi,S4,14
+135,95,2004,Infiniti,G35,12
+136,76,2005,Subaru,Sti,12
+137,177,2005,Volkswagen,"Jetta gli",12
+138,96,2017,Volkswagen,Gti,10
+139,94,2004,Volkswagen,Gti,10
+140,68,2013,Nissan,Altima,10
+141,243,2008,Toyota,Matrix,10
+142,237,1987,Volkswagen,Jetta,10
+143,190,1995,Lexus,Sc300,10
+144,16,2008,Nissan,350z,10
+145,138,1990,Mazda,Miata,10
+146,111,2007,Bmw,328i,10
+147,102,2015,Honda,Accord,10
+148,86,1996,Volkswagen,Jetta,8
+149,74,2015,Honda,Accord,8
+150,69,2018,Subaru,WRX,8
+151,42,2001,Dodge,Viper,8
+152,28,1995,Bmw,318xi,8
+153,185,2013,Volkswagen,Jett,8
+154,184,2010,Volkswagen,Cc,8
+155,75,2012,Subaru,WRX,6
+156,71,2008,Acura,TL,6
+157,64,2004,Subaru,Forester,6
+158,40,2007,Subaru,Legacy,6
+159,212,2001,Lexus,Is300,6
+160,1,2012,Subaru,WRX,6
+161,72,2016,Honda,"Civic si",4
+162,66,2010,Volkswagen,Gti,4
+163,174,2006,Acura,Rsx,4
+164,197,2010,Audi,A4,2
+165,Car_ID,Year,Make,Model,0
+166,70,2014,Honda,Civic,0
+167,101,2014,Honda,Civic,0
+168,0,2015,Chevy,Camaro,0
+sqlite> .tables
+Car_Score  cars       judges     scores     temp
+sqlite> .schema Car_Score
+CREATE TABLE Car_Score (
+Car_ID int,
+Score int,
+PRIMARY KEY (Car_ID));
+sqlite> INSERT INTO Car_Score (Car_ID, Score)
+   ...> SELECT Car_ID, Score FROM scores;
+sqlite> SELECT * FROM Car_Scores
+   ...> ;
+Parse error: no such table: Car_Scores
+sqlite> SELECT * FROM Car_Score;
+128,128
+124,124
+15,120
+113,116
+83,112
+112,110
+65,106
+91,102
+50,102
+31,102
+216,96
+228,92
+175,92
+13,92
+126,92
+63,86
+127,86
+3,84
+161,84
+180,82
+57,80
+25,78
+106,78
+36,74
+39,72
+178,72
+103,72
+84,70
+33,68
+30,66
+123,66
+1051,66
+41,64
+218,64
+158,64
+48,62
+38,62
+23,62
+21,62
+12,62
+53,60
+35,60
+142,58
+110,58
+156,56
+115,56
+6,54
+43,54
+37,54
+137,54
+225,52
+134,52
+5,50
+51,50
+189,50
+170,50
+88,48
+52,48
+211,48
+104,48
+232,46
+Showcar,44
+9,44
+8,44
+140,44
+122,44
+121,44
+118,44
+85,42
+56,42
+49,42
+45,42
+153,42
+44,40
+222,40
+207,40
+19,40
+176,40
+99,38
+20,38
+18,38
+179,38
+145,38
+78,36
+200,36
+162,36
+17,34
+10,34
+46,32
+4341,32
+24,32
+92,30
+7,30
+181,30
+120,30
+11,30
+59,28
+238,28
+144,28
+116,28
+98,26
+242,26
+219,26
+187,26
+14,26
+141,26
+114,26
+81,24
+241,24
+22,24
+2,24
+130,24
+93,22
+172,22
+163,22
+150,22
+100,22
+235,20
+230,20
+182,20
+167,20
+79,18
+34,18
+226,18
+Vip,16
+89,16
+183,16
+67,14
+4,14
+220,14
+193,14
+186,14
+159,14
+108,14
+95,12
+76,12
+177,12
+96,10
+94,10
+68,10
+243,10
+237,10
+190,10
+16,10
+138,10
+111,10
+102,10
+86,8
+74,8
+69,8
+42,8
+28,8
+185,8
+184,8
+75,6
+71,6
+64,6
+40,6
+212,6
+1,6
+72,4
+66,4
+174,4
+197,2
+Car_ID,0
+70,0
+101,0
+0,0
+sqlite>
+
+
+
