@@ -1,3 +1,11 @@
+PREVIOUS:
+
+Error: near "ls": syntax error
+sqlite> CREATE TABLE cars(CAR_ID int NOT NULL,Year int,Make varchar(255),Model varchar(255),Owner varchar(255),PRIMARY KEY (CAR_ID));
+sqlite> .quit
+
+//LINUX MACHINES DID NOT HAVE UPDATED SQLITE3 SOFTWARE TO DYNAMICALLY CREATE TABLE SO I SWITCH TO PC TO INSERT DATA NEEDED
+
 Microsoft Windows [Version 10.0.19043.1526]
 (c) Microsoft Corporation. All rights reserved.
 
