@@ -933,4 +933,39 @@ Vip,2008,Volkswagen,Gli,Salomon
 237,1987,Volkswagen,Jetta,Padraic
 sqlite> .schema cars
 CREATE TABLE cars(CAR_ID int NOT NULL,Year int,Make varchar(255),Model varchar(255),Owner varchar(255),PRIMARY KEY (CAR_ID));
-sqlite>
+
+//////
+
+
+PS C:\Users\rafid\Desktop\CISC3140> sqlite3 .\base.db
+SQLite version 3.38.0 2022-02-22 18:58:40
+Enter ".help" for usage hints.
+sqlite> .table
+Car_Score  Persons    cars       temp
+sqlite> .schema Persons
+CREATE TABLE Persons (
+Judge_ID int NOT NULL,
+Judge_Name varchar(255),
+PRIMARY KEY (Judge_ID));
+sqlite> ALTER TABLE Persons
+   ...> RENAME TO judges;
+sqlite> .table
+Car_Score  cars       judges     temp
+sqlite> INSERT INTO judges (Judge_ID, Judge_Name)
+   ...> select Judge_ID, Judge_Name FROM temp;
+Runtime error: UNIQUE constraint failed: judges.Judge_ID (19)
+sqlite> INSERT INTO judges (Judge_ID, Judge_Name)
+   ...> SELECT DISTINCT Judge_ID, Judge_Name FROM temp;
+sqlite> SELECT * FROM judges
+   ...> ;
+J04|Bob
+J02|Carl
+J05|Adrian
+J06|Aaron
+J09|Dan
+J01|Wayne
+J03|Carol
+J08|Danny
+sqlite> .quit
+
+////
