@@ -3785,3 +3785,549 @@ d-----          3/6/2022   8:07 PM                data_lab1
 
 
 PS C:\Users\rafid\Desktop\CISC3140>
+sqlite> SELECT * FROM (
+   ...> SELECT
+   ...> RANK () OVER (
+   ...> PARTITION BY Judge_Name
+   ...> ORDER BY Timestamp
+   ...> ) Make_Rank,
+   ...> Car_ID,
+   ...> Year,
+   ...> Make,
+   ...> Model
+   ...> FROM
+   ...> times
+   ...> ) ;
+1,122,2011,Infiniti,M37s
+2,39,2011,Honda,Civic
+2,104,2014,Honda,"Civic si"
+4,44,2018,Honda,"Civic si"
+5,102,2015,Honda,Accord
+6,22,2007,Honda,Civic
+7,118,1993,Honda,Civic
+8,99,2014,Honda,"Civic si"
+9,88,2008,Honda,Accord
+10,72,2016,Honda,"Civic si"
+11,83,2014,Honda,Accord
+12,70,2014,Honda,Civic
+13,101,2014,Honda,Civic
+14,85,2017,Honda,Accord
+15,115,2001,Honda,Crv
+16,178,2009,Honda,Oddesy
+17,175,2006,Honda,Civic
+18,130,2016,Honda,"Civic si"
+19,63,2010,Honda,Civic
+20,31,2007,Honda,Fit
+21,65,2009,Honda,Fit
+22,34,2010,Honda,Fit
+23,20,2009,Infiniti,G37
+23,4,2007,Honda,Civic
+25,74,2015,Honda,Accord
+26,89,2014,Honda,"Civic si"
+27,95,2004,Infiniti,G35
+28,35,2016,Honda,Civic
+29,13,2016,Honda,"Civic 1.5t"
+30,226,2008,Honda,Accord
+31,207,1993,Honda,"Civic eG"
+32,128,2010,Infiniti,G37
+1,123,2006,Lexus,Sc430
+2,15,2014,Audi,S4
+3,108,2013,Audi,S4
+4,197,2010,Audi,A4
+5,116,2008,Audi,A4
+6,18,2015,Audi,S3
+7,212,2001,Lexus,Is300
+8,222,2015,Lexus,Is250
+9,220,2004,Audi,A4
+10,190,1995,Lexus,Sc300
+1,5,2003,Acura,Rsx
+2,106,2007,Acura,"Tl type s"
+3,113,2012,Acura,"Tsx sportwagon"
+4,41,2012,Acura,Tsx
+5,1051,2006,Acura,Tsx
+6,103,2010,Acura,Tsx
+7,43,2011,Toyota,"4 Runner"
+8,49,1997,Acura,Integra
+9,45,2006,Acura,TL
+10,52,2007,Mazda,"Speed 3"
+11,48,2015,Acura,TLX
+12,79,1993,Mazda,Miata
+13,241,2007,Toyota,Camry
+14,174,2006,Acura,Rsx
+15,121,2012,Acura,TL
+16,243,2008,Toyota,Matrix
+17,50,2015,Acura,TLX
+18,142,1993,Toyota,Supra
+19,159,2013,Hyundai,"Gen coupe"
+20,141,1993,Mazda,Miata
+21,138,1990,Mazda,Miata
+22,235,2013,Scion,Frs
+23,57,2015,Scion,Frs
+24,112,2008,Acura,TL
+25,110,2011,Toyota,Camry
+26,71,2008,Acura,TL
+27,78,2015,Mazda,6
+28,93,2005,Acura,TL
+29,38,2017,Hyundai,"Elantra sport"
+30,30,2012,Hyundai,Celoster
+30,92,2017,Hyundai,"Elantra sport"
+32,230,2004,Acura,Tsx
+33,225,2016,Acura,TLX
+34,189,2012,Toyota,"Fj cruiser"
+35,127,2013,Acura,Tsx
+36,211,2004,Acura,Tsx
+1,42,2001,Dodge,Viper
+2,0,2015,Chevy,Camaro
+3,167,2016,Ford,Mystang
+4,170,2014,Chevy,Cruze
+5,124,2015,Jeep,Wrangler
+5,120,2014,Ford,"Focus st"
+7,137,2017,Ford,"Focus rs"
+8,219,2016,Ford,"Focus rs"
+9,216,2007,Chrystler,300
+10,218,2010,Chevy,Camaro
+1,12,1990,Nissan,240
+2,162,2014,Nissan,370z
+3,14,1990,Nissan,Skyline
+4,16,2008,Nissan,350z
+5,9,1996,Nissan,240
+6,4341,1992,Nissan,Rps13
+7,68,2013,Nissan,Altima
+7,8,1991,Nissan,Skyline
+9,10,2001,Nissan,S15
+10,11,1991,Nissan,Skyline
+11,150,2006,Nissan,350z
+12,7,2014,Nissan,Sentra
+13,3,2011,Nissan,370
+14,Showcar,2014,Nissan,Gtr
+15,228,2010,Nissan,370
+16,242,2014,Nissan,Maxima
+17,158,2007,Nissan,350z
+18,161,2012,Nissan,370z
+19,193,2014,Nissan,Ssntra
+1,98,2012,Mercedes,C63
+2,51,2015,Subaru,WRX
+3,84,2012,Mercedes,Cl63amg
+4,37,2015,Subaru,Sti
+5,36,2016,Subaru,WRX
+6,33,2015,Subaru,Sti
+7,232,2018,Subaru,WRX
+8,75,2012,Subaru,WRX
+9,64,2004,Subaru,Forester
+10,25,2012,Mercedes,C250
+11,153,2017,Subaru,Brz
+12,23,1998,Subaru,Legacy
+13,24,2013,Subaru,BRZ
+14,21,2009,Subaru,WRX
+15,134,2013,Subaru,WRX
+16,17,2016,Mercedes,C43
+17,200,2016,Subaru,WRX
+18,76,2005,Subaru,Sti
+19,53,2013,Subaru,WRX
+20,69,2018,Subaru,WRX
+21,67,2015,Subaru,Sti
+22,187,2007,Subaru,Legacy
+23,40,2007,Subaru,Legacy
+24,1,2012,Subaru,WRX
+1,91,2010,Mitsu,Lancer
+2,163,2013,Mitsu,Ralliart
+3,176,2014,Mitsu,Lancer
+4,19,2001,Mitsu,Evo7
+5,140,1995,Mitsu,Evo8
+1,2,2016,Bmw,M2
+2,46,2008,Volkswagen,R32
+3,6,2016,Volkswagen,"Golf r"
+4,59,2012,Volkswagen,Golf
+5,28,1995,Bmw,318xi
+6,100,2006,Volvo,S60r
+7,111,2007,Bmw,328i
+8,56,2009,Volkswagen,Jetta
+9,177,2005,Volkswagen,"Jetta gli"
+10,172,2014,Bmw,4
+11,182,2012,Volkswagen,Cc
+12,81,2016,Volkswagen,GTI
+13,183,2005,Volkswagen,Jetta
+14,179,2004,Volkswagen,R32
+15,181,2003,Volkswagen,Gti
+16,185,2013,Volkswagen,Jett
+17,114,2010,Volkswagen,Gti
+18,238,1982,Volkswagen,Rabbit
+19,66,2010,Volkswagen,Gti
+20,156,2014,Volkswagen,Gli
+21,180,2011,Volkswagen,Gti
+22,186,2012,Volkswagen,Gli
+23,184,2010,Volkswagen,Cc
+24,86,1996,Volkswagen,Jetta
+25,96,2017,Volkswagen,Gti
+26,94,2004,Volkswagen,Gti
+27,237,1987,Volkswagen,Jetta
+28,Vip,2008,Volkswagen,Gli
+29,126,2010,Volkswagen,Eos
+30,145,1990,Volkswagen,Gti
+31,144,2016,Volkswagen,Gti
+sqlite> SELECT * FROM (
+   ...> SELECT
+   ...> RANK () OVER (
+   ...> PARTITION BY Judge_Name
+   ...> ORDER BY Timestamp
+   ...> ) Number_Judges,
+   ...> Judge_Name,
+   ...> Judge_ID,
+   ...> Make,
+   ...> Model,
+   ...> Year,
+   ...> Car_ID
+   ...> FROM
+   ...> times
+   ...> ) ;
+1,Aaron,J06,Infiniti,M37s,2011,122
+2,Aaron,J06,Honda,Civic,2011,39
+2,Aaron,J06,Honda,"Civic si",2014,104
+4,Aaron,J06,Honda,"Civic si",2018,44
+5,Aaron,J06,Honda,Accord,2015,102
+6,Aaron,J06,Honda,Civic,2007,22
+7,Aaron,J06,Honda,Civic,1993,118
+8,Aaron,J06,Honda,"Civic si",2014,99
+9,Aaron,J06,Honda,Accord,2008,88
+10,Aaron,J06,Honda,"Civic si",2016,72
+11,Aaron,J06,Honda,Accord,2014,83
+12,Aaron,J06,Honda,Civic,2014,70
+13,Aaron,J06,Honda,Civic,2014,101
+14,Aaron,J06,Honda,Accord,2017,85
+15,Aaron,J06,Honda,Crv,2001,115
+16,Aaron,J06,Honda,Oddesy,2009,178
+17,Aaron,J06,Honda,Civic,2006,175
+18,Aaron,J06,Honda,"Civic si",2016,130
+19,Aaron,J06,Honda,Civic,2010,63
+20,Aaron,J06,Honda,Fit,2007,31
+21,Aaron,J06,Honda,Fit,2009,65
+22,Aaron,J06,Honda,Fit,2010,34
+23,Aaron,J06,Infiniti,G37,2009,20
+23,Aaron,J06,Honda,Civic,2007,4
+25,Aaron,J06,Honda,Accord,2015,74
+26,Aaron,J06,Honda,"Civic si",2014,89
+27,Aaron,J06,Infiniti,G35,2004,95
+28,Aaron,J06,Honda,Civic,2016,35
+29,Aaron,J06,Honda,"Civic 1.5t",2016,13
+30,Aaron,J06,Honda,Accord,2008,226
+31,Aaron,J06,Honda,"Civic eG",1993,207
+32,Aaron,J06,Infiniti,G37,2010,128
+1,Adrian,J05,Lexus,Sc430,2006,123
+2,Adrian,J05,Audi,S4,2014,15
+3,Adrian,J05,Audi,S4,2013,108
+4,Adrian,J05,Audi,A4,2010,197
+5,Adrian,J05,Audi,A4,2008,116
+6,Adrian,J05,Audi,S3,2015,18
+7,Adrian,J05,Lexus,Is300,2001,212
+8,Adrian,J05,Lexus,Is250,2015,222
+9,Adrian,J05,Audi,A4,2004,220
+10,Adrian,J05,Lexus,Sc300,1995,190
+1,Bob,J04,Acura,Rsx,2003,5
+2,Bob,J04,Acura,"Tl type s",2007,106
+3,Bob,J04,Acura,"Tsx sportwagon",2012,113
+4,Bob,J04,Acura,Tsx,2012,41
+5,Bob,J04,Acura,Tsx,2006,1051
+6,Bob,J04,Acura,Tsx,2010,103
+7,Bob,J04,Toyota,"4 Runner",2011,43
+8,Bob,J04,Acura,Integra,1997,49
+9,Bob,J04,Acura,TL,2006,45
+10,Bob,J04,Mazda,"Speed 3",2007,52
+11,Bob,J04,Acura,TLX,2015,48
+12,Bob,J04,Mazda,Miata,1993,79
+13,Bob,J04,Toyota,Camry,2007,241
+14,Bob,J04,Acura,Rsx,2006,174
+15,Bob,J04,Acura,TL,2012,121
+16,Bob,J04,Toyota,Matrix,2008,243
+17,Bob,J04,Acura,TLX,2015,50
+18,Bob,J04,Toyota,Supra,1993,142
+19,Bob,J04,Hyundai,"Gen coupe",2013,159
+20,Bob,J04,Mazda,Miata,1993,141
+21,Bob,J04,Mazda,Miata,1990,138
+22,Bob,J04,Scion,Frs,2013,235
+23,Bob,J04,Scion,Frs,2015,57
+24,Bob,J04,Acura,TL,2008,112
+25,Bob,J04,Toyota,Camry,2011,110
+26,Bob,J04,Acura,TL,2008,71
+27,Bob,J04,Mazda,6,2015,78
+28,Bob,J04,Acura,TL,2005,93
+29,Bob,J04,Hyundai,"Elantra sport",2017,38
+30,Bob,J04,Hyundai,Celoster,2012,30
+30,Bob,J04,Hyundai,"Elantra sport",2017,92
+32,Bob,J04,Acura,Tsx,2004,230
+33,Bob,J04,Acura,TLX,2016,225
+34,Bob,J04,Toyota,"Fj cruiser",2012,189
+35,Bob,J04,Acura,Tsx,2013,127
+36,Bob,J04,Acura,Tsx,2004,211
+1,Carl,J02,Dodge,Viper,2001,42
+2,Carl,J02,Chevy,Camaro,2015,0
+3,Carl,J02,Ford,Mystang,2016,167
+4,Carl,J02,Chevy,Cruze,2014,170
+5,Carl,J02,Jeep,Wrangler,2015,124
+5,Carl,J02,Ford,"Focus st",2014,120
+7,Carl,J02,Ford,"Focus rs",2017,137
+8,Carl,J02,Ford,"Focus rs",2016,219
+9,Carl,J02,Chrystler,300,2007,216
+10,Carl,J02,Chevy,Camaro,2010,218
+1,Carol,J03,Nissan,240,1990,12
+2,Carol,J03,Nissan,370z,2014,162
+3,Carol,J03,Nissan,Skyline,1990,14
+4,Carol,J03,Nissan,350z,2008,16
+5,Carol,J03,Nissan,240,1996,9
+6,Carol,J03,Nissan,Rps13,1992,4341
+7,Carol,J03,Nissan,Altima,2013,68
+7,Carol,J03,Nissan,Skyline,1991,8
+9,Carol,J03,Nissan,S15,2001,10
+10,Carol,J03,Nissan,Skyline,1991,11
+11,Carol,J03,Nissan,350z,2006,150
+12,Carol,J03,Nissan,Sentra,2014,7
+13,Carol,J03,Nissan,370,2011,3
+14,Carol,J03,Nissan,Gtr,2014,Showcar
+15,Carol,J03,Nissan,370,2010,228
+16,Carol,J03,Nissan,Maxima,2014,242
+17,Carol,J03,Nissan,350z,2007,158
+18,Carol,J03,Nissan,370z,2012,161
+19,Carol,J03,Nissan,Ssntra,2014,193
+1,Dan,J09,Mercedes,C63,2012,98
+2,Dan,J09,Subaru,WRX,2015,51
+3,Dan,J09,Mercedes,Cl63amg,2012,84
+4,Dan,J09,Subaru,Sti,2015,37
+5,Dan,J09,Subaru,WRX,2016,36
+6,Dan,J09,Subaru,Sti,2015,33
+7,Dan,J09,Subaru,WRX,2018,232
+8,Dan,J09,Subaru,WRX,2012,75
+9,Dan,J09,Subaru,Forester,2004,64
+10,Dan,J09,Mercedes,C250,2012,25
+11,Dan,J09,Subaru,Brz,2017,153
+12,Dan,J09,Subaru,Legacy,1998,23
+13,Dan,J09,Subaru,BRZ,2013,24
+14,Dan,J09,Subaru,WRX,2009,21
+15,Dan,J09,Subaru,WRX,2013,134
+16,Dan,J09,Mercedes,C43,2016,17
+17,Dan,J09,Subaru,WRX,2016,200
+18,Dan,J09,Subaru,Sti,2005,76
+19,Dan,J09,Subaru,WRX,2013,53
+20,Dan,J09,Subaru,WRX,2018,69
+21,Dan,J09,Subaru,Sti,2015,67
+22,Dan,J09,Subaru,Legacy,2007,187
+23,Dan,J09,Subaru,Legacy,2007,40
+24,Dan,J09,Subaru,WRX,2012,1
+1,Danny,J08,Mitsu,Lancer,2010,91
+2,Danny,J08,Mitsu,Ralliart,2013,163
+3,Danny,J08,Mitsu,Lancer,2014,176
+4,Danny,J08,Mitsu,Evo7,2001,19
+5,Danny,J08,Mitsu,Evo8,1995,140
+1,Wayne,J01,Bmw,M2,2016,2
+2,Wayne,J01,Volkswagen,R32,2008,46
+3,Wayne,J01,Volkswagen,"Golf r",2016,6
+4,Wayne,J01,Volkswagen,Golf,2012,59
+5,Wayne,J01,Bmw,318xi,1995,28
+6,Wayne,J01,Volvo,S60r,2006,100
+7,Wayne,J01,Bmw,328i,2007,111
+8,Wayne,J01,Volkswagen,Jetta,2009,56
+9,Wayne,J01,Volkswagen,"Jetta gli",2005,177
+10,Wayne,J01,Bmw,4,2014,172
+11,Wayne,J01,Volkswagen,Cc,2012,182
+12,Wayne,J01,Volkswagen,GTI,2016,81
+13,Wayne,J01,Volkswagen,Jetta,2005,183
+14,Wayne,J01,Volkswagen,R32,2004,179
+15,Wayne,J01,Volkswagen,Gti,2003,181
+16,Wayne,J01,Volkswagen,Jett,2013,185
+17,Wayne,J01,Volkswagen,Gti,2010,114
+18,Wayne,J01,Volkswagen,Rabbit,1982,238
+19,Wayne,J01,Volkswagen,Gti,2010,66
+20,Wayne,J01,Volkswagen,Gli,2014,156
+21,Wayne,J01,Volkswagen,Gti,2011,180
+22,Wayne,J01,Volkswagen,Gli,2012,186
+23,Wayne,J01,Volkswagen,Cc,2010,184
+24,Wayne,J01,Volkswagen,Jetta,1996,86
+25,Wayne,J01,Volkswagen,Gti,2017,96
+26,Wayne,J01,Volkswagen,Gti,2004,94
+27,Wayne,J01,Volkswagen,Jetta,1987,237
+28,Wayne,J01,Volkswagen,Gli,2008,Vip
+29,Wayne,J01,Volkswagen,Eos,2010,126
+30,Wayne,J01,Volkswagen,Gti,1990,145
+31,Wayne,J01,Volkswagen,Gti,2016,144
+sqlite> SELECT * FROM (
+   ...> SELECT
+   ...> RANK () OVER (
+   ...> PARTITION BY Judge_Name
+   ...> ORDER BY Timestamp
+   ...> ) Number_Judges,
+   ...> Judge_Name,
+   ...> Judge_ID,
+   ...> Make,
+   ...> Model,
+   ...> Year,
+   ...> Car_ID,
+   ...> Timestamp
+   ...> FROM
+   ...> times
+   ...> ) ;
+1,Aaron,J06,Infiniti,M37s,2011,122,"8/5/2018 13:20"
+2,Aaron,J06,Honda,Civic,2011,39,"8/5/2018 13:25"
+2,Aaron,J06,Honda,"Civic si",2014,104,"8/5/2018 13:25"
+4,Aaron,J06,Honda,"Civic si",2018,44,"8/5/2018 13:32"
+5,Aaron,J06,Honda,Accord,2015,102,"8/5/2018 14:24"
+6,Aaron,J06,Honda,Civic,2007,22,"8/5/2018 14:30"
+7,Aaron,J06,Honda,Civic,1993,118,"8/5/2018 14:58"
+8,Aaron,J06,Honda,"Civic si",2014,99,"8/5/2018 15:22"
+9,Aaron,J06,Honda,Accord,2008,88,"8/5/2018 15:34"
+10,Aaron,J06,Honda,"Civic si",2016,72,"8/5/2018 15:41"
+11,Aaron,J06,Honda,Accord,2014,83,"8/5/2018 15:42"
+12,Aaron,J06,Honda,Civic,2014,70,"8/5/2018 15:43"
+13,Aaron,J06,Honda,Civic,2014,101,"8/5/2018 15:45"
+14,Aaron,J06,Honda,Accord,2017,85,"8/5/2018 15:48"
+15,Aaron,J06,Honda,Crv,2001,115,"8/5/2018 15:52"
+16,Aaron,J06,Honda,Oddesy,2009,178,"8/5/2018 16:11"
+17,Aaron,J06,Honda,Civic,2006,175,"8/5/2018 16:21"
+18,Aaron,J06,Honda,"Civic si",2016,130,"8/5/2018 16:33"
+19,Aaron,J06,Honda,Civic,2010,63,"8/5/2018 16:49"
+20,Aaron,J06,Honda,Fit,2007,31,"8/5/2018 16:51"
+21,Aaron,J06,Honda,Fit,2009,65,"8/5/2018 16:53"
+22,Aaron,J06,Honda,Fit,2010,34,"8/5/2018 16:56"
+23,Aaron,J06,Infiniti,G37,2009,20,"8/5/2018 17:00"
+23,Aaron,J06,Honda,Civic,2007,4,"8/5/2018 17:00"
+25,Aaron,J06,Honda,Accord,2015,74,"8/5/2018 17:02"
+26,Aaron,J06,Honda,"Civic si",2014,89,"8/5/2018 17:03"
+27,Aaron,J06,Infiniti,G35,2004,95,"8/5/2018 17:13"
+28,Aaron,J06,Honda,Civic,2016,35,"8/5/2018 17:19"
+29,Aaron,J06,Honda,"Civic 1.5t",2016,13,"8/5/2018 17:25"
+30,Aaron,J06,Honda,Accord,2008,226,"8/5/2018 17:30"
+31,Aaron,J06,Honda,"Civic eG",1993,207,"8/5/2018 17:34"
+32,Aaron,J06,Infiniti,G37,2010,128,"8/5/2018 17:43"
+1,Adrian,J05,Lexus,Sc430,2006,123,"8/5/2018 13:28"
+2,Adrian,J05,Audi,S4,2014,15,"8/5/2018 13:49"
+3,Adrian,J05,Audi,S4,2013,108,"8/5/2018 14:13"
+4,Adrian,J05,Audi,A4,2010,197,"8/5/2018 15:14"
+5,Adrian,J05,Audi,A4,2008,116,"8/5/2018 15:35"
+6,Adrian,J05,Audi,S3,2015,18,"8/5/2018 16:55"
+7,Adrian,J05,Lexus,Is300,2001,212,"8/5/2018 17:05"
+8,Adrian,J05,Lexus,Is250,2015,222,"8/5/2018 17:10"
+9,Adrian,J05,Audi,A4,2004,220,"8/5/2018 17:24"
+10,Adrian,J05,Lexus,Sc300,1995,190,"8/5/2018 17:31"
+1,Bob,J04,Acura,Rsx,2003,5,"8/5/2018 13:11"
+2,Bob,J04,Acura,"Tl type s",2007,106,"8/5/2018 13:20"
+3,Bob,J04,Acura,"Tsx sportwagon",2012,113,"8/5/2018 13:32"
+4,Bob,J04,Acura,Tsx,2012,41,"8/5/2018 13:36"
+5,Bob,J04,Acura,Tsx,2006,1051,"8/5/2018 13:38"
+6,Bob,J04,Acura,Tsx,2010,103,"8/5/2018 13:44"
+7,Bob,J04,Toyota,"4 Runner",2011,43,"8/5/2018 13:45"
+8,Bob,J04,Acura,Integra,1997,49,"8/5/2018 13:46"
+9,Bob,J04,Acura,TL,2006,45,"8/5/2018 13:58"
+10,Bob,J04,Mazda,"Speed 3",2007,52,"8/5/2018 14:01"
+11,Bob,J04,Acura,TLX,2015,48,"8/5/2018 14:10"
+12,Bob,J04,Mazda,Miata,1993,79,"8/5/2018 14:17"
+13,Bob,J04,Toyota,Camry,2007,241,"8/5/2018 14:35"
+14,Bob,J04,Acura,Rsx,2006,174,"8/5/2018 14:37"
+15,Bob,J04,Acura,TL,2012,121,"8/5/2018 14:44"
+16,Bob,J04,Toyota,Matrix,2008,243,"8/5/2018 15:17"
+17,Bob,J04,Acura,TLX,2015,50,"8/5/2018 15:48"
+18,Bob,J04,Toyota,Supra,1993,142,"8/5/2018 16:08"
+19,Bob,J04,Hyundai,"Gen coupe",2013,159,"8/5/2018 16:12"
+20,Bob,J04,Mazda,Miata,1993,141,"8/5/2018 16:21"
+21,Bob,J04,Mazda,Miata,1990,138,"8/5/2018 16:23"
+22,Bob,J04,Scion,Frs,2013,235,"8/5/2018 16:28"
+23,Bob,J04,Scion,Frs,2015,57,"8/5/2018 16:38"
+24,Bob,J04,Acura,TL,2008,112,"8/5/2018 16:55"
+25,Bob,J04,Toyota,Camry,2011,110,"8/5/2018 16:59"
+26,Bob,J04,Acura,TL,2008,71,"8/5/2018 17:04"
+27,Bob,J04,Mazda,6,2015,78,"8/5/2018 17:07"
+28,Bob,J04,Acura,TL,2005,93,"8/5/2018 17:10"
+29,Bob,J04,Hyundai,"Elantra sport",2017,38,"8/5/2018 17:25"
+30,Bob,J04,Hyundai,Celoster,2012,30,"8/5/2018 17:29"
+30,Bob,J04,Hyundai,"Elantra sport",2017,92,"8/5/2018 17:29"
+32,Bob,J04,Acura,Tsx,2004,230,"8/5/2018 17:33"
+33,Bob,J04,Acura,TLX,2016,225,"8/5/2018 17:36"
+34,Bob,J04,Toyota,"Fj cruiser",2012,189,"8/5/2018 17:40"
+35,Bob,J04,Acura,Tsx,2013,127,"8/5/2018 17:44"
+36,Bob,J04,Acura,Tsx,2004,211,"8/5/2018 17:51"
+1,Carl,J02,Dodge,Viper,2001,42,"8/5/2018 13:16"
+2,Carl,J02,Chevy,Camaro,2015,0,"8/5/2018 13:33"
+3,Carl,J02,Ford,Mystang,2016,167,"8/5/2018 14:30"
+4,Carl,J02,Chevy,Cruze,2014,170,"8/5/2018 14:33"
+5,Carl,J02,Jeep,Wrangler,2015,124,"8/5/2018 15:11"
+5,Carl,J02,Ford,"Focus st",2014,120,"8/5/2018 15:11"
+7,Carl,J02,Ford,"Focus rs",2017,137,"8/5/2018 16:26"
+8,Carl,J02,Ford,"Focus rs",2016,219,"8/5/2018 17:07"
+9,Carl,J02,Chrystler,300,2007,216,"8/5/2018 17:11"
+10,Carl,J02,Chevy,Camaro,2010,218,"8/5/2018 17:14"
+1,Carol,J03,Nissan,240,1990,12,"8/5/2018 13:26"
+2,Carol,J03,Nissan,370z,2014,162,"8/5/2018 13:39"
+3,Carol,J03,Nissan,Skyline,1990,14,"8/5/2018 14:02"
+4,Carol,J03,Nissan,350z,2008,16,"8/5/2018 14:28"
+5,Carol,J03,Nissan,240,1996,9,"8/5/2018 15:10"
+6,Carol,J03,Nissan,Rps13,1992,4341,"8/5/2018 15:20"
+7,Carol,J03,Nissan,Altima,2013,68,"8/5/2018 15:39"
+7,Carol,J03,Nissan,Skyline,1991,8,"8/5/2018 15:39"
+9,Carol,J03,Nissan,S15,2001,10,"8/5/2018 15:50"
+10,Carol,J03,Nissan,Skyline,1991,11,"8/5/2018 15:58"
+11,Carol,J03,Nissan,350z,2006,150,"8/5/2018 16:02"
+12,Carol,J03,Nissan,Sentra,2014,7,"8/5/2018 16:40"
+13,Carol,J03,Nissan,370,2011,3,"8/5/2018 16:50"
+14,Carol,J03,Nissan,Gtr,2014,Showcar,"8/5/2018 16:58"
+15,Carol,J03,Nissan,370,2010,228,"8/5/2018 17:14"
+16,Carol,J03,Nissan,Maxima,2014,242,"8/5/2018 17:27"
+17,Carol,J03,Nissan,350z,2007,158,"8/5/2018 17:31"
+18,Carol,J03,Nissan,370z,2012,161,"8/5/2018 17:33"
+19,Carol,J03,Nissan,Ssntra,2014,193,"8/5/2018 17:35"
+1,Dan,J09,Mercedes,C63,2012,98,"8/5/2018 14:08"
+2,Dan,J09,Subaru,WRX,2015,51,"8/5/2018 14:11"
+3,Dan,J09,Mercedes,Cl63amg,2012,84,"8/5/2018 14:28"
+4,Dan,J09,Subaru,Sti,2015,37,"8/5/2018 14:50"
+5,Dan,J09,Subaru,WRX,2016,36,"8/5/2018 14:57"
+6,Dan,J09,Subaru,Sti,2015,33,"8/5/2018 15:00"
+7,Dan,J09,Subaru,WRX,2018,232,"8/5/2018 15:23"
+8,Dan,J09,Subaru,WRX,2012,75,"8/5/2018 15:31"
+9,Dan,J09,Subaru,Forester,2004,64,"8/5/2018 15:33"
+10,Dan,J09,Mercedes,C250,2012,25,"8/5/2018 15:52"
+11,Dan,J09,Subaru,Brz,2017,153,"8/5/2018 16:00"
+12,Dan,J09,Subaru,Legacy,1998,23,"8/5/2018 16:15"
+13,Dan,J09,Subaru,BRZ,2013,24,"8/5/2018 16:21"
+14,Dan,J09,Subaru,WRX,2009,21,"8/5/2018 16:27"
+15,Dan,J09,Subaru,WRX,2013,134,"8/5/2018 16:30"
+16,Dan,J09,Mercedes,C43,2016,17,"8/5/2018 16:53"
+17,Dan,J09,Subaru,WRX,2016,200,"8/5/2018 17:00"
+18,Dan,J09,Subaru,Sti,2005,76,"8/5/2018 17:07"
+19,Dan,J09,Subaru,WRX,2013,53,"8/5/2018 17:09"
+20,Dan,J09,Subaru,WRX,2018,69,"8/5/2018 17:10"
+21,Dan,J09,Subaru,Sti,2015,67,"8/5/2018 17:13"
+22,Dan,J09,Subaru,Legacy,2007,187,"8/5/2018 17:39"
+23,Dan,J09,Subaru,Legacy,2007,40,"8/5/2018 17:46"
+24,Dan,J09,Subaru,WRX,2012,1,"8/5/2018 17:48"
+1,Danny,J08,Mitsu,Lancer,2010,91,"8/5/2018 15:26"
+2,Danny,J08,Mitsu,Ralliart,2013,163,"8/5/2018 16:16"
+3,Danny,J08,Mitsu,Lancer,2014,176,"8/5/2018 16:19"
+4,Danny,J08,Mitsu,Evo7,2001,19,"8/5/2018 17:05"
+5,Danny,J08,Mitsu,Evo8,1995,140,"8/5/2018 17:52"
+1,Wayne,J01,Bmw,M2,2016,2,"8/5/2018 13:47"
+2,Wayne,J01,Volkswagen,R32,2008,46,"8/5/2018 13:53"
+3,Wayne,J01,Volkswagen,"Golf r",2016,6,"8/5/2018 13:59"
+4,Wayne,J01,Volkswagen,Golf,2012,59,"8/5/2018 14:06"
+5,Wayne,J01,Bmw,318xi,1995,28,"8/5/2018 14:17"
+6,Wayne,J01,Volvo,S60r,2006,100,"8/5/2018 14:18"
+7,Wayne,J01,Bmw,328i,2007,111,"8/5/2018 14:21"
+8,Wayne,J01,Volkswagen,Jetta,2009,56,"8/5/2018 14:35"
+9,Wayne,J01,Volkswagen,"Jetta gli",2005,177,"8/5/2018 14:41"
+10,Wayne,J01,Bmw,4,2014,172,"8/5/2018 14:44"
+11,Wayne,J01,Volkswagen,Cc,2012,182,"8/5/2018 14:49"
+12,Wayne,J01,Volkswagen,GTI,2016,81,"8/5/2018 14:51"
+13,Wayne,J01,Volkswagen,Jetta,2005,183,"8/5/2018 14:54"
+14,Wayne,J01,Volkswagen,R32,2004,179,"8/5/2018 14:57"
+15,Wayne,J01,Volkswagen,Gti,2003,181,"8/5/2018 15:02"
+16,Wayne,J01,Volkswagen,Jett,2013,185,"8/5/2018 15:05"
+17,Wayne,J01,Volkswagen,Gti,2010,114,"8/5/2018 15:19"
+18,Wayne,J01,Volkswagen,Rabbit,1982,238,"8/5/2018 15:25"
+19,Wayne,J01,Volkswagen,Gti,2010,66,"8/5/2018 15:36"
+20,Wayne,J01,Volkswagen,Gli,2014,156,"8/5/2018 15:59"
+21,Wayne,J01,Volkswagen,Gti,2011,180,"8/5/2018 16:26"
+22,Wayne,J01,Volkswagen,Gli,2012,186,"8/5/2018 16:29"
+23,Wayne,J01,Volkswagen,Cc,2010,184,"8/5/2018 16:31"
+24,Wayne,J01,Volkswagen,Jetta,1996,86,"8/5/2018 16:42"
+25,Wayne,J01,Volkswagen,Gti,2017,96,"8/5/2018 16:44"
+26,Wayne,J01,Volkswagen,Gti,2004,94,"8/5/2018 16:46"
+27,Wayne,J01,Volkswagen,Jetta,1987,237,"8/5/2018 16:48"
+28,Wayne,J01,Volkswagen,Gli,2008,Vip,"8/5/2018 17:07"
+29,Wayne,J01,Volkswagen,Eos,2010,126,"8/5/2018 17:37"
+30,Wayne,J01,Volkswagen,Gti,1990,145,"8/5/2018 17:47"
+31,Wayne,J01,Volkswagen,Gti,2016,144,"8/5/2018 17:50"
+sqlite> ) ;
